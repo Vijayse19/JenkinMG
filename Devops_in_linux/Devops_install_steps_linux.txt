@@ -1,0 +1,68 @@
+
+How to setup DELIVERY PIPELINE in Jenkins (Step by Step)
+https://www.youtube.com/watch?v=ndLbn24OwQg
+
+Jenkins: Upstream, Downstream Jobs
+https://www.youtube.com/watch?reload=9&v=jRY05FckpaY
+
+How to Configure Email Notification in Jenkins?
+https://www.360logica.com/blog/email-notification-in-jenkins/
+
+============================================
+Jenkins install steps in Linux server
+=============================================
+openshift
+java  
+Java install page " https://www.liquidweb.com/kb/install-java-8-on-centos-7/
+
+Git ---https://git-scm.com/book/en/v2/Getting-Started-Installing-
+
+[centos@ip-172-31-9-137 ~]$ sudo yum install git-all
+[centos@ip-172-31-9-137 ~]$ sudo git --version
+
+Jenkins
+http://3.17.66.84:8080/
+
+maven   --- install URL steps  https://tecadmin.net/install-apache-maven-on-centos/
+
+========================================================================================
+Jenkins =
+
+sudo yum install wget 
+
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+yum install jenkins
+===============================
+referance url " https://linuxize.com/post/how-to-install-jenkins-on-centos-7/"
+========================================================================================
+
+Install Apache Maven on CentOS with Yum
+
+1) Install maven in linux  
+
+https://tecadmin.net/install-apache-maven-on-centos/
+
+2) mvn ––version
+
+sudo yum install maven
+
+=====================================================================
+sample Build project with Gradile and maven -- using jenkins   
+
+https://vocon-it.com/2016/12/09/getting-started-with-jenkins-part-2-automated-job-hello-world/
+======================================================================
+Docker --- Install steps
+
+https://runnable.com/docker/install-docker-on-windows-10
+
+Installation steps :
+Download Docker
+
+Double-click "  InstallDocker.msi "   to run the installer.
+Follow the Install Wizard: accept the license, authorize the installer, and proceed with the install.
+Click Finish to launch Docker.
+Docker starts automatically.
+Docker loads a “Welcome” window giving you tips and access to the Docker documentation.
+
+======================================================================

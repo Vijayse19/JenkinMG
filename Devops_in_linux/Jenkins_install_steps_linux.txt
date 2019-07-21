@@ -1,0 +1,60 @@
+
+[centos@ip-192-168-2-13 ~]$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+--2019-07-19 14:53:37--  http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+Resolving pkg.jenkins-ci.org (pkg.jenkins-ci.org)... 52.202.51.185
+Connecting to pkg.jenkins-ci.org (pkg.jenkins-ci.org)|52.202.51.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 85
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[========================================================================================================>] 85          --.-K/s   in 0s
+
+2019-07-19 14:53:37 (17.2 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [85/85]
+
+[centos@ip-192-168-2-13 ~]$
+
+[centos@ip-192-168-2-13 ~]$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+[centos@ip-192-168-2-13 ~]$
+
+[centos@ip-192-168-2-13 ~]$ sudo yum install jenkins
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.us-midwest-1.nexcess.net
+ * extras: ewr.edge.kernel.org
+ * updates: mirrors.gigenet.com
+jenkins                                                                                                                    | 2.9 kB  00:00:00
+jenkins/primary_db                                                                                                         |  29 kB  00:00:00
+Resolving Dependencies
+--> Running transaction check
+---> Package jenkins.noarch 0:2.176.2-1.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================================================================
+ Package                           Arch                             Version                               Repository                         Size
+==================================================================================================================================================
+Installing:
+ jenkins                           noarch                           2.176.2-1.1                           jenkins                            74 M
+
+Transaction Summary
+==================================================================================================================================================
+Install  1 Package
+
+Total download size: 74 M
+Installed size: 74 M
+Is this ok [y/d/N]: y
+Downloading packages:
+jenkins-2.176.2-1.1.noarch.rpm                                                                                             |  74 MB  00:00:04
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : jenkins-2.176.2-1.1.noarch                                                                                                     1/1
+  Verifying  : jenkins-2.176.2-1.1.noarch                                                                                                     1/1
+
+Installed:
+  jenkins.noarch 0:2.176.2-1.1
+
+Complete!
+[centos@ip-192-168-2-13 ~]$
