@@ -1,0 +1,271 @@
+Microsoft Windows [Version 10.0.17134.829]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Manavalan L>mvn --version
+Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T00:30:29+05:30)
+Maven home: C:\apache-maven-3.6.1\bin\..
+Java version: 12.0.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-12.0.1
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
+C:\Users\Manavalan L>cd Desktop
+
+C:\Users\Manavalan L\Desktop>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Manavalan L\Desktop>cd Maven
+
+C:\Users\Manavalan L\Desktop\Maven>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Manavalan L\Desktop\Maven>mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:3.1.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:3.1.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- maven-archetype-plugin:3.1.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: maven-archetype-quickstart:1.4
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: my-app
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: packageInPathFormat, Value: com/mycompany/app
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: my-app
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Project created from Archetype in dir: C:\Users\Manavalan L\Desktop\Maven\my-app
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:19 min
+[INFO] Finished at: 2019-07-13T12:18:25+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Manavalan L\Desktop\Maven>ls
+my-app
+
+C:\Users\Manavalan L\Desktop\Maven>cd my-app
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ls
+pom.xml  src
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>cd..
+
+C:\Users\Manavalan L\Desktop\Maven>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Manavalan L\Desktop\Maven>ls
+my-app
+
+C:\Users\Manavalan L\Desktop\Maven>
+C:\Users\Manavalan L\Desktop\Maven>ls
+my-app
+
+C:\Users\Manavalan L\Desktop\Maven>mvn install
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.141 s
+[INFO] Finished at: 2019-07-13T12:31:24+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (C:\Users\Manavalan L\Desktop\Maven). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+
+C:\Users\Manavalan L\Desktop\Maven>cd my-app
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ls
+pom.xml  src
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>mvn install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Manavalan L\Desktop\Maven\my-app\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ my-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\Manavalan L\Desktop\Maven\my-app\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Manavalan L\Desktop\Maven\my-app\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ my-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\Manavalan L\Desktop\Maven\my-app\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ my-app ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mycompany.app.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.mycompany.app.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ my-app ---
+[INFO] Building jar: C:\Users\Manavalan L\Desktop\Maven\my-app\target\my-app-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ my-app ---
+[INFO] Installing C:\Users\Manavalan L\Desktop\Maven\my-app\target\my-app-1.0-SNAPSHOT.jar to C:\Users\Manavalan L\.m2\repository\com\mycompany\app\my-app\1.0-SNAPSHOT\my-app-1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\Manavalan L\Desktop\Maven\my-app\pom.xml to C:\Users\Manavalan L\.m2\repository\com\mycompany\app\my-app\1.0-SNAPSHOT\my-app-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.888 s
+[INFO] Finished at: 2019-07-13T12:32:08+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ls
+pom.xml  src  target
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>cd target
+
+C:\Users\Manavalan L\Desktop\Maven\my-app\target>ls
+classes  generated-sources  generated-test-sources  maven-archiver  maven-status  my-app-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+
+C:\Users\Manavalan L\Desktop\Maven\my-app\target>cd ..
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ls
+pom.xml  src  target
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>cd ..
+
+C:\Users\Manavalan L\Desktop\Maven>ls
+my-app
+
+
+=================================Below steps to generate WAR file -==================================================
+
+C:\Users\Manavalan L\Desktop\Maven>mvn archetype:generate -DgroupId=com.rajacompany.miya -DartifactId=hippo -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4 -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:3.1.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:3.1.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- maven-archetype-plugin:3.1.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: maven-archetype-quickstart:1.4
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: sunday
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: packageInPathFormat, Value: com/mycompany/app
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: sunday
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Project created from Archetype in dir: C:\Users\Manavalan L\Desktop\Maven\sunday
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28.352 s
+[INFO] Finished at: 2019-07-13T12:38:54+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Manavalan L\Desktop\Maven>cd sunday
+
+C:\Users\Manavalan L\Desktop\Maven\sunday>ls
+pom.xml  src
+
+C:\Users\Manavalan L\Desktop\Maven\sunday>
+
+C:\Users\Manavalan L\Desktop\Maven>ls
+my-app  sunday
+
+C:\Users\Manavalan L\Desktop\Maven>cd my-app
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Manavalan L\Desktop\Maven\my-app\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ my-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Manavalan L\Desktop\Maven\my-app\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ my-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ my-app ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mycompany.app.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in com.mycompany.app.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ my-app ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.588 s
+[INFO] Finished at: 2019-07-13T12:43:17+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>ls
+pom.xml  src  target
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+Hello World!
+
+C:\Users\Manavalan L\Desktop\Maven\my-app>
