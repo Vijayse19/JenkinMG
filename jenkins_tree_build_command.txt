@@ -1,0 +1,1343 @@
+Using username "centos".
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Jul 22 04:34:57 2019 from 42.111.166.251
+[centos@ip-192-168-2-162 ~]$ ls
+jdk-12.0.2_linux-x64_bin.tar.gz
+[centos@ip-192-168-2-162 ~]$ sudo tar -xvf jdk-12.0.2_linux-x64_bin.tar.gz
+jdk-12.0.2/bin/jaotc
+jdk-12.0.2/bin/jar
+jdk-12.0.2/bin/jarsigner
+jdk-12.0.2/bin/java
+jdk-12.0.2/bin/javac
+jdk-12.0.2/bin/javadoc
+jdk-12.0.2/bin/javap
+jdk-12.0.2/bin/jcmd
+jdk-12.0.2/bin/jconsole
+jdk-12.0.2/bin/jdb
+jdk-12.0.2/bin/jdeprscan
+jdk-12.0.2/bin/jdeps
+jdk-12.0.2/bin/jfr
+jdk-12.0.2/bin/jhsdb
+jdk-12.0.2/bin/jimage
+jdk-12.0.2/bin/jinfo
+jdk-12.0.2/bin/jjs
+jdk-12.0.2/bin/jlink
+jdk-12.0.2/bin/jmap
+jdk-12.0.2/bin/jmod
+jdk-12.0.2/bin/jps
+jdk-12.0.2/bin/jrunscript
+jdk-12.0.2/bin/jshell
+jdk-12.0.2/bin/jstack
+jdk-12.0.2/bin/jstat
+jdk-12.0.2/bin/jstatd
+jdk-12.0.2/bin/keytool
+jdk-12.0.2/bin/pack200
+jdk-12.0.2/bin/rmic
+jdk-12.0.2/bin/rmid
+jdk-12.0.2/bin/rmiregistry
+jdk-12.0.2/bin/serialver
+jdk-12.0.2/bin/unpack200
+jdk-12.0.2/conf/logging.properties
+jdk-12.0.2/conf/management/jmxremote.access
+jdk-12.0.2/conf/management/jmxremote.password.template
+jdk-12.0.2/conf/management/management.properties
+jdk-12.0.2/conf/net.properties
+jdk-12.0.2/conf/sdp/sdp.conf.template
+jdk-12.0.2/conf/security/java.policy
+jdk-12.0.2/conf/security/java.security
+jdk-12.0.2/conf/security/policy/README.txt
+jdk-12.0.2/conf/security/policy/limited/default_US_export.policy
+jdk-12.0.2/conf/security/policy/limited/default_local.policy
+jdk-12.0.2/conf/security/policy/limited/exempt_local.policy
+jdk-12.0.2/conf/security/policy/unlimited/default_US_export.policy
+jdk-12.0.2/conf/security/policy/unlimited/default_local.policy
+jdk-12.0.2/conf/sound.properties
+jdk-12.0.2/include/classfile_constants.h
+jdk-12.0.2/include/jawt.h
+jdk-12.0.2/include/jdwpTransport.h
+jdk-12.0.2/include/jni.h
+jdk-12.0.2/include/jvmti.h
+jdk-12.0.2/include/jvmticmlr.h
+jdk-12.0.2/include/linux/jawt_md.h
+jdk-12.0.2/include/linux/jni_md.h
+jdk-12.0.2/jmods/java.base.jmod
+jdk-12.0.2/jmods/java.compiler.jmod
+jdk-12.0.2/jmods/java.datatransfer.jmod
+jdk-12.0.2/jmods/java.desktop.jmod
+jdk-12.0.2/jmods/java.instrument.jmod
+jdk-12.0.2/jmods/java.logging.jmod
+jdk-12.0.2/jmods/java.management.jmod
+jdk-12.0.2/jmods/java.management.rmi.jmod
+jdk-12.0.2/jmods/java.naming.jmod
+jdk-12.0.2/jmods/java.net.http.jmod
+jdk-12.0.2/jmods/java.prefs.jmod
+jdk-12.0.2/jmods/java.rmi.jmod
+jdk-12.0.2/jmods/java.scripting.jmod
+jdk-12.0.2/jmods/java.se.jmod
+jdk-12.0.2/jmods/java.security.jgss.jmod
+jdk-12.0.2/jmods/java.security.sasl.jmod
+jdk-12.0.2/jmods/java.smartcardio.jmod
+jdk-12.0.2/jmods/java.sql.jmod
+jdk-12.0.2/jmods/java.sql.rowset.jmod
+jdk-12.0.2/jmods/java.transaction.xa.jmod
+jdk-12.0.2/jmods/java.xml.crypto.jmod
+jdk-12.0.2/jmods/java.xml.jmod
+jdk-12.0.2/jmods/jdk.accessibility.jmod
+jdk-12.0.2/jmods/jdk.aot.jmod
+jdk-12.0.2/jmods/jdk.attach.jmod
+jdk-12.0.2/jmods/jdk.charsets.jmod
+jdk-12.0.2/jmods/jdk.compiler.jmod
+jdk-12.0.2/jmods/jdk.crypto.cryptoki.jmod
+jdk-12.0.2/jmods/jdk.crypto.ec.jmod
+jdk-12.0.2/jmods/jdk.dynalink.jmod
+jdk-12.0.2/jmods/jdk.editpad.jmod
+jdk-12.0.2/jmods/jdk.hotspot.agent.jmod
+jdk-12.0.2/jmods/jdk.httpserver.jmod
+jdk-12.0.2/jmods/jdk.internal.ed.jmod
+jdk-12.0.2/jmods/jdk.internal.jvmstat.jmod
+jdk-12.0.2/jmods/jdk.internal.le.jmod
+jdk-12.0.2/jmods/jdk.internal.opt.jmod
+jdk-12.0.2/jmods/jdk.internal.vm.ci.jmod
+jdk-12.0.2/jmods/jdk.internal.vm.compiler.jmod
+jdk-12.0.2/jmods/jdk.internal.vm.compiler.management.jmod
+jdk-12.0.2/jmods/jdk.jartool.jmod
+jdk-12.0.2/jmods/jdk.javadoc.jmod
+jdk-12.0.2/jmods/jdk.jcmd.jmod
+jdk-12.0.2/jmods/jdk.jconsole.jmod
+jdk-12.0.2/jmods/jdk.jdeps.jmod
+jdk-12.0.2/jmods/jdk.jdi.jmod
+jdk-12.0.2/jmods/jdk.jdwp.agent.jmod
+jdk-12.0.2/jmods/jdk.jfr.jmod
+jdk-12.0.2/jmods/jdk.jlink.jmod
+jdk-12.0.2/jmods/jdk.jshell.jmod
+jdk-12.0.2/jmods/jdk.jsobject.jmod
+jdk-12.0.2/jmods/jdk.jstatd.jmod
+jdk-12.0.2/jmods/jdk.localedata.jmod
+jdk-12.0.2/jmods/jdk.management.agent.jmod
+jdk-12.0.2/jmods/jdk.management.jfr.jmod
+jdk-12.0.2/jmods/jdk.management.jmod
+jdk-12.0.2/jmods/jdk.naming.dns.jmod
+jdk-12.0.2/jmods/jdk.naming.rmi.jmod
+jdk-12.0.2/jmods/jdk.net.jmod
+jdk-12.0.2/jmods/jdk.pack.jmod
+jdk-12.0.2/jmods/jdk.rmic.jmod
+jdk-12.0.2/jmods/jdk.scripting.nashorn.jmod
+jdk-12.0.2/jmods/jdk.scripting.nashorn.shell.jmod
+jdk-12.0.2/jmods/jdk.sctp.jmod
+jdk-12.0.2/jmods/jdk.security.auth.jmod
+jdk-12.0.2/jmods/jdk.security.jgss.jmod
+jdk-12.0.2/jmods/jdk.unsupported.desktop.jmod
+jdk-12.0.2/jmods/jdk.unsupported.jmod
+jdk-12.0.2/jmods/jdk.xml.dom.jmod
+jdk-12.0.2/jmods/jdk.zipfs.jmod
+jdk-12.0.2/legal/java.base/COPYRIGHT
+jdk-12.0.2/legal/java.base/LICENSE
+jdk-12.0.2/legal/java.base/aes.md
+jdk-12.0.2/legal/java.base/asm.md
+jdk-12.0.2/legal/java.base/c-libutl.md
+jdk-12.0.2/legal/java.base/cldr.md
+jdk-12.0.2/legal/java.base/icu.md
+jdk-12.0.2/legal/java.base/public_suffix.md
+jdk-12.0.2/legal/java.base/unicode.md
+jdk-12.0.2/legal/java.compiler/COPYRIGHT
+jdk-12.0.2/legal/java.compiler/LICENSE
+jdk-12.0.2/legal/java.datatransfer/COPYRIGHT
+jdk-12.0.2/legal/java.datatransfer/LICENSE
+jdk-12.0.2/legal/java.desktop/COPYRIGHT
+jdk-12.0.2/legal/java.desktop/LICENSE
+jdk-12.0.2/legal/java.desktop/colorimaging.md
+jdk-12.0.2/legal/java.desktop/giflib.md
+jdk-12.0.2/legal/java.desktop/harfbuzz.md
+jdk-12.0.2/legal/java.desktop/jpeg.md
+jdk-12.0.2/legal/java.desktop/lcms.md
+jdk-12.0.2/legal/java.desktop/libpng.md
+jdk-12.0.2/legal/java.desktop/mesa3d.md
+jdk-12.0.2/legal/java.desktop/opengl.md
+jdk-12.0.2/legal/java.desktop/xwd.md
+jdk-12.0.2/legal/java.instrument/COPYRIGHT
+jdk-12.0.2/legal/java.instrument/LICENSE
+jdk-12.0.2/legal/java.logging/COPYRIGHT
+jdk-12.0.2/legal/java.logging/LICENSE
+jdk-12.0.2/legal/java.management.rmi/COPYRIGHT
+jdk-12.0.2/legal/java.management.rmi/LICENSE
+jdk-12.0.2/legal/java.management/COPYRIGHT
+jdk-12.0.2/legal/java.management/LICENSE
+jdk-12.0.2/legal/java.naming/COPYRIGHT
+jdk-12.0.2/legal/java.naming/LICENSE
+jdk-12.0.2/legal/java.net.http/COPYRIGHT
+jdk-12.0.2/legal/java.net.http/LICENSE
+jdk-12.0.2/legal/java.prefs/COPYRIGHT
+jdk-12.0.2/legal/java.prefs/LICENSE
+jdk-12.0.2/legal/java.rmi/COPYRIGHT
+jdk-12.0.2/legal/java.rmi/LICENSE
+jdk-12.0.2/legal/java.scripting/COPYRIGHT
+jdk-12.0.2/legal/java.scripting/LICENSE
+jdk-12.0.2/legal/java.se/COPYRIGHT
+jdk-12.0.2/legal/java.se/LICENSE
+jdk-12.0.2/legal/java.security.jgss/COPYRIGHT
+jdk-12.0.2/legal/java.security.jgss/LICENSE
+jdk-12.0.2/legal/java.security.sasl/COPYRIGHT
+jdk-12.0.2/legal/java.security.sasl/LICENSE
+jdk-12.0.2/legal/java.smartcardio/COPYRIGHT
+jdk-12.0.2/legal/java.smartcardio/LICENSE
+jdk-12.0.2/legal/java.smartcardio/pcsclite.md
+jdk-12.0.2/legal/java.sql.rowset/COPYRIGHT
+jdk-12.0.2/legal/java.sql.rowset/LICENSE
+jdk-12.0.2/legal/java.sql/COPYRIGHT
+jdk-12.0.2/legal/java.sql/LICENSE
+jdk-12.0.2/legal/java.transaction.xa/COPYRIGHT
+jdk-12.0.2/legal/java.transaction.xa/LICENSE
+jdk-12.0.2/legal/java.xml.crypto/COPYRIGHT
+jdk-12.0.2/legal/java.xml.crypto/LICENSE
+jdk-12.0.2/legal/java.xml.crypto/santuario.md
+jdk-12.0.2/legal/java.xml/COPYRIGHT
+jdk-12.0.2/legal/java.xml/LICENSE
+jdk-12.0.2/legal/java.xml/bcel.md
+jdk-12.0.2/legal/java.xml/dom.md
+jdk-12.0.2/legal/java.xml/jcup.md
+jdk-12.0.2/legal/java.xml/xalan.md
+jdk-12.0.2/legal/java.xml/xerces.md
+jdk-12.0.2/legal/jdk.accessibility/COPYRIGHT
+jdk-12.0.2/legal/jdk.accessibility/LICENSE
+jdk-12.0.2/legal/jdk.aot/COPYRIGHT
+jdk-12.0.2/legal/jdk.aot/LICENSE
+jdk-12.0.2/legal/jdk.attach/COPYRIGHT
+jdk-12.0.2/legal/jdk.attach/LICENSE
+jdk-12.0.2/legal/jdk.charsets/COPYRIGHT
+jdk-12.0.2/legal/jdk.charsets/LICENSE
+jdk-12.0.2/legal/jdk.compiler/COPYRIGHT
+jdk-12.0.2/legal/jdk.compiler/LICENSE
+jdk-12.0.2/legal/jdk.crypto.cryptoki/COPYRIGHT
+jdk-12.0.2/legal/jdk.crypto.cryptoki/LICENSE
+jdk-12.0.2/legal/jdk.crypto.cryptoki/pkcs11cryptotoken.md
+jdk-12.0.2/legal/jdk.crypto.cryptoki/pkcs11wrapper.md
+jdk-12.0.2/legal/jdk.crypto.ec/COPYRIGHT
+jdk-12.0.2/legal/jdk.crypto.ec/LICENSE
+jdk-12.0.2/legal/jdk.crypto.ec/ecc.md
+jdk-12.0.2/legal/jdk.dynalink/COPYRIGHT
+jdk-12.0.2/legal/jdk.dynalink/LICENSE
+jdk-12.0.2/legal/jdk.dynalink/dynalink.md
+jdk-12.0.2/legal/jdk.editpad/COPYRIGHT
+jdk-12.0.2/legal/jdk.editpad/LICENSE
+jdk-12.0.2/legal/jdk.hotspot.agent/COPYRIGHT
+jdk-12.0.2/legal/jdk.hotspot.agent/LICENSE
+jdk-12.0.2/legal/jdk.httpserver/COPYRIGHT
+jdk-12.0.2/legal/jdk.httpserver/LICENSE
+jdk-12.0.2/legal/jdk.internal.ed/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.ed/LICENSE
+jdk-12.0.2/legal/jdk.internal.jvmstat/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.jvmstat/LICENSE
+jdk-12.0.2/legal/jdk.internal.le/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.le/LICENSE
+jdk-12.0.2/legal/jdk.internal.le/jline.md
+jdk-12.0.2/legal/jdk.internal.opt/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.opt/LICENSE
+jdk-12.0.2/legal/jdk.internal.opt/jopt-simple.md
+jdk-12.0.2/legal/jdk.internal.vm.ci/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.vm.ci/LICENSE
+jdk-12.0.2/legal/jdk.internal.vm.compiler.management/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.vm.compiler.management/LICENSE
+jdk-12.0.2/legal/jdk.internal.vm.compiler/COPYRIGHT
+jdk-12.0.2/legal/jdk.internal.vm.compiler/LICENSE
+jdk-12.0.2/legal/jdk.jartool/COPYRIGHT
+jdk-12.0.2/legal/jdk.jartool/LICENSE
+jdk-12.0.2/legal/jdk.javadoc/COPYRIGHT
+jdk-12.0.2/legal/jdk.javadoc/LICENSE
+jdk-12.0.2/legal/jdk.javadoc/jquery-migrate.md
+jdk-12.0.2/legal/jdk.javadoc/jquery.md
+jdk-12.0.2/legal/jdk.javadoc/jqueryUI.md
+jdk-12.0.2/legal/jdk.javadoc/jszip.md
+jdk-12.0.2/legal/jdk.javadoc/pako.md
+jdk-12.0.2/legal/jdk.jcmd/COPYRIGHT
+jdk-12.0.2/legal/jdk.jcmd/LICENSE
+jdk-12.0.2/legal/jdk.jconsole/COPYRIGHT
+jdk-12.0.2/legal/jdk.jconsole/LICENSE
+jdk-12.0.2/legal/jdk.jdeps/COPYRIGHT
+jdk-12.0.2/legal/jdk.jdeps/LICENSE
+jdk-12.0.2/legal/jdk.jdi/COPYRIGHT
+jdk-12.0.2/legal/jdk.jdi/LICENSE
+jdk-12.0.2/legal/jdk.jdwp.agent/COPYRIGHT
+jdk-12.0.2/legal/jdk.jdwp.agent/LICENSE
+jdk-12.0.2/legal/jdk.jfr/COPYRIGHT
+jdk-12.0.2/legal/jdk.jfr/LICENSE
+jdk-12.0.2/legal/jdk.jlink/COPYRIGHT
+jdk-12.0.2/legal/jdk.jlink/LICENSE
+jdk-12.0.2/legal/jdk.jshell/COPYRIGHT
+jdk-12.0.2/legal/jdk.jshell/LICENSE
+jdk-12.0.2/legal/jdk.jsobject/COPYRIGHT
+jdk-12.0.2/legal/jdk.jsobject/LICENSE
+jdk-12.0.2/legal/jdk.jstatd/COPYRIGHT
+jdk-12.0.2/legal/jdk.jstatd/LICENSE
+jdk-12.0.2/legal/jdk.localedata/COPYRIGHT
+jdk-12.0.2/legal/jdk.localedata/LICENSE
+jdk-12.0.2/legal/jdk.localedata/cldr.md
+jdk-12.0.2/legal/jdk.localedata/thaidict.md
+jdk-12.0.2/legal/jdk.management.agent/COPYRIGHT
+jdk-12.0.2/legal/jdk.management.agent/LICENSE
+jdk-12.0.2/legal/jdk.management.jfr/COPYRIGHT
+jdk-12.0.2/legal/jdk.management.jfr/LICENSE
+jdk-12.0.2/legal/jdk.management/COPYRIGHT
+jdk-12.0.2/legal/jdk.management/LICENSE
+jdk-12.0.2/legal/jdk.naming.dns/COPYRIGHT
+jdk-12.0.2/legal/jdk.naming.dns/LICENSE
+jdk-12.0.2/legal/jdk.naming.rmi/COPYRIGHT
+jdk-12.0.2/legal/jdk.naming.rmi/LICENSE
+jdk-12.0.2/legal/jdk.net/COPYRIGHT
+jdk-12.0.2/legal/jdk.net/LICENSE
+jdk-12.0.2/legal/jdk.pack/COPYRIGHT
+jdk-12.0.2/legal/jdk.pack/LICENSE
+jdk-12.0.2/legal/jdk.rmic/COPYRIGHT
+jdk-12.0.2/legal/jdk.rmic/LICENSE
+jdk-12.0.2/legal/jdk.scripting.nashorn.shell/COPYRIGHT
+jdk-12.0.2/legal/jdk.scripting.nashorn.shell/LICENSE
+jdk-12.0.2/legal/jdk.scripting.nashorn/COPYRIGHT
+jdk-12.0.2/legal/jdk.scripting.nashorn/LICENSE
+jdk-12.0.2/legal/jdk.scripting.nashorn/double-conversion.md
+jdk-12.0.2/legal/jdk.scripting.nashorn/joni.md
+jdk-12.0.2/legal/jdk.sctp/COPYRIGHT
+jdk-12.0.2/legal/jdk.sctp/LICENSE
+jdk-12.0.2/legal/jdk.security.auth/COPYRIGHT
+jdk-12.0.2/legal/jdk.security.auth/LICENSE
+jdk-12.0.2/legal/jdk.security.jgss/COPYRIGHT
+jdk-12.0.2/legal/jdk.security.jgss/LICENSE
+jdk-12.0.2/legal/jdk.unsupported.desktop/COPYRIGHT
+jdk-12.0.2/legal/jdk.unsupported.desktop/LICENSE
+jdk-12.0.2/legal/jdk.unsupported/COPYRIGHT
+jdk-12.0.2/legal/jdk.unsupported/LICENSE
+jdk-12.0.2/legal/jdk.xml.dom/COPYRIGHT
+jdk-12.0.2/legal/jdk.xml.dom/LICENSE
+jdk-12.0.2/legal/jdk.zipfs/COPYRIGHT
+jdk-12.0.2/legal/jdk.zipfs/LICENSE
+jdk-12.0.2/lib/classlist
+jdk-12.0.2/lib/ct.sym
+jdk-12.0.2/lib/jexec
+jdk-12.0.2/lib/jfr/default.jfc
+jdk-12.0.2/lib/jfr/profile.jfc
+jdk-12.0.2/lib/jrt-fs.jar
+jdk-12.0.2/lib/jspawnhelper
+jdk-12.0.2/lib/jvm.cfg
+jdk-12.0.2/lib/libattach.so
+jdk-12.0.2/lib/libawt.so
+jdk-12.0.2/lib/libawt_headless.so
+jdk-12.0.2/lib/libawt_xawt.so
+jdk-12.0.2/lib/libdt_socket.so
+jdk-12.0.2/lib/libextnet.so
+jdk-12.0.2/lib/libfontmanager.so
+jdk-12.0.2/lib/libinstrument.so
+jdk-12.0.2/lib/libj2gss.so
+jdk-12.0.2/lib/libj2pcsc.so
+jdk-12.0.2/lib/libj2pkcs11.so
+jdk-12.0.2/lib/libjaas.so
+jdk-12.0.2/lib/libjava.so
+jdk-12.0.2/lib/libjavajpeg.so
+jdk-12.0.2/lib/libjawt.so
+jdk-12.0.2/lib/libjdwp.so
+jdk-12.0.2/lib/libjimage.so
+jdk-12.0.2/lib/libjli.so
+jdk-12.0.2/lib/libjsig.so
+jdk-12.0.2/lib/libjsound.so
+jdk-12.0.2/lib/liblcms.so
+jdk-12.0.2/lib/libmanagement.so
+jdk-12.0.2/lib/libmanagement_agent.so
+jdk-12.0.2/lib/libmanagement_ext.so
+jdk-12.0.2/lib/libmlib_image.so
+jdk-12.0.2/lib/libnet.so
+jdk-12.0.2/lib/libnio.so
+jdk-12.0.2/lib/libprefs.so
+jdk-12.0.2/lib/librmi.so
+jdk-12.0.2/lib/libsaproc.so
+jdk-12.0.2/lib/libsctp.so
+jdk-12.0.2/lib/libsplashscreen.so
+jdk-12.0.2/lib/libsunec.so
+jdk-12.0.2/lib/libunpack.so
+jdk-12.0.2/lib/libverify.so
+jdk-12.0.2/lib/libzip.so
+jdk-12.0.2/lib/modules
+jdk-12.0.2/lib/psfont.properties.ja
+jdk-12.0.2/lib/psfontj2d.properties
+jdk-12.0.2/lib/security/blacklisted.certs
+jdk-12.0.2/lib/security/cacerts
+jdk-12.0.2/lib/security/default.policy
+jdk-12.0.2/lib/security/public_suffix_list.dat
+jdk-12.0.2/lib/server/Xusage.txt
+jdk-12.0.2/lib/server/classes.jsa
+jdk-12.0.2/lib/server/libjsig.so
+jdk-12.0.2/lib/server/libjvm.so
+jdk-12.0.2/lib/src.zip
+jdk-12.0.2/lib/tzdb.dat
+jdk-12.0.2/man/man1/jaccessinspector.1
+jdk-12.0.2/man/man1/jaccesswalker.1
+jdk-12.0.2/man/man1/jar.1
+jdk-12.0.2/man/man1/jarsigner.1
+jdk-12.0.2/man/man1/java.1
+jdk-12.0.2/man/man1/javac.1
+jdk-12.0.2/man/man1/javadoc.1
+jdk-12.0.2/man/man1/javap.1
+jdk-12.0.2/man/man1/jcmd.1
+jdk-12.0.2/man/man1/jconsole.1
+jdk-12.0.2/man/man1/jdb.1
+jdk-12.0.2/man/man1/jdeprscan.1
+jdk-12.0.2/man/man1/jdeps.1
+jdk-12.0.2/man/man1/jhsdb.1
+jdk-12.0.2/man/man1/jinfo.1
+jdk-12.0.2/man/man1/jjs.1
+jdk-12.0.2/man/man1/jlink.1
+jdk-12.0.2/man/man1/jmap.1
+jdk-12.0.2/man/man1/jmod.1
+jdk-12.0.2/man/man1/jps.1
+jdk-12.0.2/man/man1/jrunscript.1
+jdk-12.0.2/man/man1/jshell.1
+jdk-12.0.2/man/man1/jstack.1
+jdk-12.0.2/man/man1/jstat.1
+jdk-12.0.2/man/man1/jstatd.1
+jdk-12.0.2/man/man1/keytool.1
+jdk-12.0.2/man/man1/kinit.1
+jdk-12.0.2/man/man1/klist.1
+jdk-12.0.2/man/man1/ktab.1
+jdk-12.0.2/man/man1/pack200.1
+jdk-12.0.2/man/man1/rmic.1
+jdk-12.0.2/man/man1/rmid.1
+jdk-12.0.2/man/man1/rmiregistry.1
+jdk-12.0.2/man/man1/serialver.1
+jdk-12.0.2/man/man1/unpack200.1
+jdk-12.0.2/release
+[centos@ip-192-168-2-162 ~]$ ls
+jdk-12.0.2  jdk-12.0.2_linux-x64_bin.tar.gz
+[centos@ip-192-168-2-162 ~]$ sudo cp -rp jdk-12.0.2 /opt/
+[centos@ip-192-168-2-162 ~]$
+Using username "centos".
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Jul 22 04:56:51 2019 from 42.111.166.251
+[centos@ip-192-168-2-162 ~]$ sudo alternatives --install /usr/bin/jar jar /opt/jdk-12.0.2/bin/jar 1
+
+sudo alternatives --install /usr/bin/javac javac /opt/jdk-12.0.2/bin/javac 1
+
+sudo alternatives --set jar /opt/jdk-12.0.2/bin/jar
+
+sudo alternatives --set javac /opt/jdk-12.0.2/bin/javac[centos@ip-192-168-2-162 ~]$
+[centos@ip-192-168-2-162 ~]$ sudo alternatives --install /usr/bin/javac javac /opt/jdk-12.0.2/bin/javac 1
+[centos@ip-192-168-2-162 ~]$
+[centos@ip-192-168-2-162 ~]$ sudo alternatives --set jar /opt/jdk-12.0.2/bin/jar
+[centos@ip-192-168-2-162 ~]$
+[centos@ip-192-168-2-162 ~]$ sudo alternatives --set javac /opt/jdk-12.0.2/bin/javac
+[centos@ip-192-168-2-162 ~]$ cd /etc/profile.d
+[centos@ip-192-168-2-162 profile.d]$ sudo vi java.sh
+[centos@ip-192-168-2-162 profile.d]$ cd /usr/local/src
+[centos@ip-192-168-2-162 src]$ sudo wget https://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+sudo: wget: command not found
+[centos@ip-192-168-2-162 src]$ sudo yum install wget
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.advancedhosters.com
+ * extras: mirror.net.cen.ct.gov
+ * updates: mirror.datto.com
+Resolving Dependencies
+--> Running transaction check
+---> Package wget.x86_64 0:1.14-18.el7_6.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch            Version                   Repository        Size
+================================================================================
+Installing:
+ wget          x86_64          1.14-18.el7_6.1           updates          547 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 547 k
+Installed size: 2.0 M
+Is this ok [y/d/N]: y
+Downloading packages:
+wget-1.14-18.el7_6.1.x86_64.rpm                            | 547 kB   00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : wget-1.14-18.el7_6.1.x86_64                                  1/1
+  Verifying  : wget-1.14-18.el7_6.1.x86_64                                  1/1
+
+Installed:
+  wget.x86_64 0:1.14-18.el7_6.1
+
+Complete!
+[centos@ip-192-168-2-162 src]$ sudo wget https://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+--2019-07-22 05:03:14--  https://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+Resolving www-us.apache.org (www-us.apache.org)... 40.79.78.1
+Connecting to www-us.apache.org (www-us.apache.org)|40.79.78.1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9136463 (8.7M) [application/x-gzip]
+Saving to: ‘apache-maven-3.6.1-bin.tar.gz’
+
+100%[======================================>] 9,136,463   13.5MB/s   in 0.6s
+
+2019-07-22 05:03:15 (13.5 MB/s) - ‘apache-maven-3.6.1-bin.tar.gz’ saved [9136463/9136463]
+
+[centos@ip-192-168-2-162 src]$ ls
+apache-maven-3.6.1-bin.tar.gz
+[centos@ip-192-168-2-162 src]$ sudo tar -xvf apache-maven-3.6.1-bin.tar.gz
+apache-maven-3.6.1/README.txt
+apache-maven-3.6.1/LICENSE
+apache-maven-3.6.1/NOTICE
+apache-maven-3.6.1/lib/
+apache-maven-3.6.1/lib/slf4j-api.license
+apache-maven-3.6.1/lib/checker-compat-qual.license
+apache-maven-3.6.1/lib/jsr250-api.license
+apache-maven-3.6.1/lib/jcl-over-slf4j.license
+apache-maven-3.6.1/lib/org.eclipse.sisu.plexus.license
+apache-maven-3.6.1/lib/animal-sniffer-annotations.license
+apache-maven-3.6.1/lib/org.eclipse.sisu.inject.license
+apache-maven-3.6.1/lib/jansi-native/
+apache-maven-3.6.1/lib/jansi-native/freebsd64/
+apache-maven-3.6.1/lib/jansi-native/osx/
+apache-maven-3.6.1/lib/jansi-native/windows32/
+apache-maven-3.6.1/lib/jansi-native/linux32/
+apache-maven-3.6.1/lib/jansi-native/freebsd32/
+apache-maven-3.6.1/lib/jansi-native/windows64/
+apache-maven-3.6.1/lib/jansi-native/linux64/
+apache-maven-3.6.1/lib/jansi-native/freebsd64/libjansi.so
+apache-maven-3.6.1/lib/jansi-native/osx/libjansi.jnilib
+apache-maven-3.6.1/lib/jansi-native/windows32/jansi.dll
+apache-maven-3.6.1/lib/jansi-native/linux32/libjansi.so
+apache-maven-3.6.1/lib/jansi-native/freebsd32/libjansi.so
+apache-maven-3.6.1/lib/jansi-native/windows64/jansi.dll
+apache-maven-3.6.1/lib/jansi-native/linux64/libjansi.so
+apache-maven-3.6.1/bin/mvn.cmd
+apache-maven-3.6.1/bin/m2.conf
+apache-maven-3.6.1/bin/mvnDebug.cmd
+apache-maven-3.6.1/bin/mvnDebug
+apache-maven-3.6.1/bin/mvn
+apache-maven-3.6.1/bin/mvnyjp
+apache-maven-3.6.1/conf/
+apache-maven-3.6.1/conf/logging/
+apache-maven-3.6.1/conf/settings.xml
+apache-maven-3.6.1/conf/toolchains.xml
+apache-maven-3.6.1/conf/logging/simplelogger.properties
+apache-maven-3.6.1/lib/ext/
+apache-maven-3.6.1/lib/jansi-native/
+apache-maven-3.6.1/lib/ext/README.txt
+apache-maven-3.6.1/lib/jansi-native/README.txt
+apache-maven-3.6.1/boot/plexus-classworlds-2.6.0.jar
+apache-maven-3.6.1/lib/maven-embedder-3.6.1.jar
+apache-maven-3.6.1/lib/maven-settings-3.6.1.jar
+apache-maven-3.6.1/lib/plexus-utils-3.2.0.jar
+apache-maven-3.6.1/lib/maven-settings-builder-3.6.1.jar
+apache-maven-3.6.1/lib/maven-builder-support-3.6.1.jar
+apache-maven-3.6.1/lib/plexus-interpolation-1.25.jar
+apache-maven-3.6.1/lib/plexus-component-annotations-1.7.1.jar
+apache-maven-3.6.1/lib/plexus-sec-dispatcher-1.4.jar
+apache-maven-3.6.1/lib/plexus-cipher-1.7.jar
+apache-maven-3.6.1/lib/maven-core-3.6.1.jar
+apache-maven-3.6.1/lib/maven-model-3.6.1.jar
+apache-maven-3.6.1/lib/maven-repository-metadata-3.6.1.jar
+apache-maven-3.6.1/lib/maven-artifact-3.6.1.jar
+apache-maven-3.6.1/lib/commons-lang3-3.8.1.jar
+apache-maven-3.6.1/lib/maven-plugin-api-3.6.1.jar
+apache-maven-3.6.1/lib/org.eclipse.sisu.plexus-0.3.3.jar
+apache-maven-3.6.1/lib/cdi-api-1.0.jar
+apache-maven-3.6.1/lib/jsr250-api-1.0.jar
+apache-maven-3.6.1/lib/javax.inject-1.jar
+apache-maven-3.6.1/lib/org.eclipse.sisu.inject-0.3.3.jar
+apache-maven-3.6.1/lib/maven-model-builder-3.6.1.jar
+apache-maven-3.6.1/lib/maven-resolver-provider-3.6.1.jar
+apache-maven-3.6.1/lib/maven-resolver-api-1.3.3.jar
+apache-maven-3.6.1/lib/maven-resolver-spi-1.3.3.jar
+apache-maven-3.6.1/lib/maven-resolver-util-1.3.3.jar
+apache-maven-3.6.1/lib/maven-resolver-impl-1.3.3.jar
+apache-maven-3.6.1/lib/slf4j-api-1.7.25.jar
+apache-maven-3.6.1/lib/maven-shared-utils-3.2.1.jar
+apache-maven-3.6.1/lib/commons-io-2.5.jar
+apache-maven-3.6.1/lib/guice-4.2.1-no_aop.jar
+apache-maven-3.6.1/lib/aopalliance-1.0.jar
+apache-maven-3.6.1/lib/guava-25.1-android.jar
+apache-maven-3.6.1/lib/jsr305-3.0.2.jar
+apache-maven-3.6.1/lib/checker-compat-qual-2.0.0.jar
+apache-maven-3.6.1/lib/error_prone_annotations-2.1.3.jar
+apache-maven-3.6.1/lib/j2objc-annotations-1.1.jar
+apache-maven-3.6.1/lib/animal-sniffer-annotations-1.14.jar
+apache-maven-3.6.1/lib/commons-cli-1.4.jar
+apache-maven-3.6.1/lib/maven-compat-3.6.1.jar
+apache-maven-3.6.1/lib/wagon-provider-api-3.3.2.jar
+apache-maven-3.6.1/lib/wagon-http-3.3.2-shaded.jar
+apache-maven-3.6.1/lib/jcl-over-slf4j-1.7.25.jar
+apache-maven-3.6.1/lib/wagon-file-3.3.2.jar
+apache-maven-3.6.1/lib/maven-resolver-connector-basic-1.3.3.jar
+apache-maven-3.6.1/lib/maven-resolver-transport-wagon-1.3.3.jar
+apache-maven-3.6.1/lib/maven-slf4j-provider-3.6.1.jar
+apache-maven-3.6.1/lib/jansi-1.17.1.jar
+[centos@ip-192-168-2-162 src]$ ls
+apache-maven-3.6.1  apache-maven-3.6.1-bin.tar.gz
+[centos@ip-192-168-2-162 src]$
+Using username "centos".
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Jul 22 05:00:52 2019 from 49.207.142.31
+[centos@ip-192-168-2-162 ~]$ cd /usr/local/src/
+[centos@ip-192-168-2-162 src]$ ls
+apache-maven-3.6.1  apache-maven-3.6.1-bin.tar.gz
+[centos@ip-192-168-2-162 src]$ sudo mv apache-maven-3.6.1 apache-maven
+[centos@ip-192-168-2-162 src]$ ls
+apache-maven  apache-maven-3.6.1-bin.tar.gz
+[centos@ip-192-168-2-162 src]$ cd /etc/profile.d
+[centos@ip-192-168-2-162 profile.d]$ sudo vi maven.sh
+[centos@ip-192-168-2-162 profile.d]$ cd ~
+[centos@ip-192-168-2-162 ~]$ mvn --version
+-bash: mvn: command not found
+[centos@ip-192-168-2-162 ~]$ cd /etc/provile.d
+-bash: cd: /etc/provile.d: No such file or directory
+[centos@ip-192-168-2-162 ~]$ cd /etc/profile.d
+[centos@ip-192-168-2-162 profile.d]$ ll
+total 64
+-rw-r--r--. 1 root root  771 Oct 30  2018 256term.csh
+-rw-r--r--. 1 root root  841 Oct 30  2018 256term.sh
+-rw-r--r--. 1 root root  196 Mar 24  2017 colorgrep.csh
+-rw-r--r--. 1 root root  201 Mar 24  2017 colorgrep.sh
+-rw-r--r--. 1 root root 1741 Oct 30  2018 colorls.csh
+-rw-r--r--. 1 root root 1606 Oct 30  2018 colorls.sh
+-rw-r--r--. 1 root root   80 Oct 30  2018 csh.local
+-rw-r--r--. 1 root root  166 Jul 22 05:02 java.sh
+-rw-r--r--. 1 root root 1706 Oct 30  2018 lang.csh
+-rw-r--r--. 1 root root 2703 Oct 30  2018 lang.sh
+-rw-r--r--. 1 root root  123 Jul 30  2015 less.csh
+-rw-r--r--. 1 root root  121 Jul 30  2015 less.sh
+-rw-r--r--. 1 root root  166 Jul 22 05:06 maven.sh
+-rw-r--r--. 1 root root   81 Oct 30  2018 sh.local
+-rw-r--r--. 1 root root  164 Jan 27  2014 which2.csh
+-rw-r--r--. 1 root root  169 Jan 27  2014 which2.sh
+[centos@ip-192-168-2-162 profile.d]$ sudo chmod +x maven.sh java.sh
+[centos@ip-192-168-2-162 profile.d]$ ll
+total 64
+-rw-r--r--. 1 root root  771 Oct 30  2018 256term.csh
+-rw-r--r--. 1 root root  841 Oct 30  2018 256term.sh
+-rw-r--r--. 1 root root  196 Mar 24  2017 colorgrep.csh
+-rw-r--r--. 1 root root  201 Mar 24  2017 colorgrep.sh
+-rw-r--r--. 1 root root 1741 Oct 30  2018 colorls.csh
+-rw-r--r--. 1 root root 1606 Oct 30  2018 colorls.sh
+-rw-r--r--. 1 root root   80 Oct 30  2018 csh.local
+-rwxr-xr-x. 1 root root  166 Jul 22 05:02 java.sh
+-rw-r--r--. 1 root root 1706 Oct 30  2018 lang.csh
+-rw-r--r--. 1 root root 2703 Oct 30  2018 lang.sh
+-rw-r--r--. 1 root root  123 Jul 30  2015 less.csh
+-rw-r--r--. 1 root root  121 Jul 30  2015 less.sh
+-rwxr-xr-x. 1 root root  166 Jul 22 05:06 maven.sh
+-rw-r--r--. 1 root root   81 Oct 30  2018 sh.local
+-rw-r--r--. 1 root root  164 Jan 27  2014 which2.csh
+-rw-r--r--. 1 root root  169 Jan 27  2014 which2.sh
+[centos@ip-192-168-2-162 profile.d]$ source java.sh
+[centos@ip-192-168-2-162 profile.d]$ source maven.sh
+[centos@ip-192-168-2-162 profile.d]$ ll
+total 64
+-rw-r--r--. 1 root root  771 Oct 30  2018 256term.csh
+-rw-r--r--. 1 root root  841 Oct 30  2018 256term.sh
+-rw-r--r--. 1 root root  196 Mar 24  2017 colorgrep.csh
+-rw-r--r--. 1 root root  201 Mar 24  2017 colorgrep.sh
+-rw-r--r--. 1 root root 1741 Oct 30  2018 colorls.csh
+-rw-r--r--. 1 root root 1606 Oct 30  2018 colorls.sh
+-rw-r--r--. 1 root root   80 Oct 30  2018 csh.local
+-rwxr-xr-x. 1 root root  166 Jul 22 05:02 java.sh
+-rw-r--r--. 1 root root 1706 Oct 30  2018 lang.csh
+-rw-r--r--. 1 root root 2703 Oct 30  2018 lang.sh
+-rw-r--r--. 1 root root  123 Jul 30  2015 less.csh
+-rw-r--r--. 1 root root  121 Jul 30  2015 less.sh
+-rwxr-xr-x. 1 root root  166 Jul 22 05:06 maven.sh
+-rw-r--r--. 1 root root   81 Oct 30  2018 sh.local
+-rw-r--r--. 1 root root  164 Jan 27  2014 which2.csh
+-rw-r--r--. 1 root root  169 Jan 27  2014 which2.sh
+[centos@ip-192-168-2-162 profile.d]$ mvn --version
+Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z)
+Maven home: /usr/local/src/apache-maven
+Java version: 12.0.2, vendor: Oracle Corporation, runtime: /opt/jdk-12.0.2
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.10.0-957.1.3.el7.x86_64", arch: "amd64", family: "unix"
+[centos@ip-192-168-2-162 profile.d]$ which git
+/usr/bin/git
+[centos@ip-192-168-2-162 profile.d]$ sudo yum install tree -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.advancedhosters.com
+ * extras: mirror.net.cen.ct.gov
+ * updates: mirror.datto.com
+Resolving Dependencies
+--> Running transaction check
+---> Package tree.x86_64 0:1.6.0-10.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch             Version                   Repository      Size
+================================================================================
+Installing:
+ tree           x86_64           1.6.0-10.el7              base            46 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 46 k
+Installed size: 87 k
+Downloading packages:
+tree-1.6.0-10.el7.x86_64.rpm                               |  46 kB   00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : tree-1.6.0-10.el7.x86_64                                     1/1
+  Verifying  : tree-1.6.0-10.el7.x86_64                                     1/1
+
+Installed:
+  tree.x86_64 0:1.6.0-10.el7
+
+Complete!
+[centos@ip-192-168-2-162 profile.d]$ cd /var/lib/jenkins/
+-bash: cd: /var/lib/jenkins/: Permission denied
+[centos@ip-192-168-2-162 profile.d]$ sudo cd /var/lib/jenkins/
+[centos@ip-192-168-2-162 profile.d]$ sudoi su
+-bash: sudoi: command not found
+[centos@ip-192-168-2-162 profile.d]$ sudo su
+[root@ip-192-168-2-162 profile.d]# cd /var/lib/jenkins/
+[root@ip-192-168-2-162 jenkins]# ls
+remoting  remoting.jar  workspace
+[root@ip-192-168-2-162 jenkins]# cd workspace/
+[root@ip-192-168-2-162 workspace]# ls
+demo
+[root@ip-192-168-2-162 workspace]# tree demo/
+demo/
++-- Jenkinsfile
++-- multi-module
+¦   +-- pom.xml
+¦   +-- server
+¦   ¦   +-- pom.xml
+¦   ¦   +-- src
+¦   ¦   ¦   +-- main
+¦   ¦   ¦   ¦   +-- java
+¦   ¦   ¦   ¦       +-- com
+¦   ¦   ¦   ¦           +-- example
+¦   ¦   ¦   ¦               +-- Greeter.java
+¦   ¦   ¦   +-- site
+¦   ¦   ¦   ¦   +-- apt
+¦   ¦   ¦   ¦       +-- index.apt
+¦   ¦   ¦   +-- test
+¦   ¦   ¦       +-- java
+¦   ¦   ¦           +-- com
+¦   ¦   ¦               +-- example
+¦   ¦   ¦                   +-- TestGreeter.java
+¦   ¦   +-- target
+¦   ¦       +-- classes
+¦   ¦       +-- generated-sources
+¦   ¦           +-- annotations
+¦   +-- src
+¦   ¦   +-- site
+¦   ¦       +-- apt
+¦   ¦       ¦   +-- index.apt
+¦   ¦       +-- site.xml
+¦   +-- webapp
+¦       +-- pom.xml
+¦       +-- src
+¦           +-- main
+¦           ¦   +-- webapp
+¦           ¦       +-- gayathri.jsp
+¦           ¦       +-- hema.jsp
+¦           ¦       +-- index.jsp
+¦           ¦       +-- lakshmi.jsp
+¦           ¦       +-- WEB-INF
+¦           ¦           +-- web.xml
+¦           +-- site
+¦               +-- apt
+¦                   +-- index.apt
++-- pom.xml
++-- README
++-- single-module
+    +-- pom.xml
+    +-- src
+        +-- main
+        ¦   +-- java
+        ¦       +-- com
+        ¦           +-- example
+        ¦               +-- Greeter.java
+        +-- site
+        ¦   +-- apt
+        ¦   ¦   +-- index.apt
+        ¦   +-- fml
+        ¦   ¦   +-- faq.fml
+        ¦   +-- site.xml
+        +-- test
+            +-- java
+                +-- com
+                    +-- example
+                        +-- TestGreeter.java
+
+40 directories, 23 files
+[root@ip-192-168-2-162 workspace]# cd ~
+[root@ip-192-168-2-162 ~]# sudo yum install maven -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.advancedhosters.com
+ * extras: mirror.net.cen.ct.gov
+ * updates: mirror.datto.com
+Resolving Dependencies
+--> Running transaction check
+---> Package maven.noarch 0:3.0.5-17.el7 will be installed
+--> Processing Dependency: sisu-inject-plexus for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: sisu-inject-bean for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: plexus-utils for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: plexus-sec-dispatcher for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: plexus-interpolation for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: plexus-containers-component-annotations for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: plexus-cipher for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: objectweb-asm for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.sisu:sisu-inject-plexus) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.plexus:plexus-sec-dispatcher) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.plexus:plexus-cipher) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.aether:aether-util) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.aether:aether-spi) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.aether:aether-impl) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.sonatype.aether:aether-api) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-utils) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-interpolation) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-container-default) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-component-annotations) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-classworlds) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(org.apache.maven.wagon:wagon-provider-api) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: mvn(commons-cli:commons-cli) for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: maven-wagon for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: java-devel for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: httpcomponents-core for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: httpcomponents-client for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: guava for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: google-guice for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: cglib for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: atinject for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: apache-commons-logging for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: apache-commons-codec for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: apache-commons-cli for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aopalliance for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aether-util for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aether-spi for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aether-impl for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aether-connector-wagon for package: maven-3.0.5-17.el7.noarch
+--> Processing Dependency: aether-api for package: maven-3.0.5-17.el7.noarch
+--> Running transaction check
+---> Package aether-api.noarch 0:1.13.1-13.el7 will be installed
+---> Package aether-connector-wagon.noarch 0:1.13.1-13.el7 will be installed
+---> Package aether-impl.noarch 0:1.13.1-13.el7 will be installed
+---> Package aether-spi.noarch 0:1.13.1-13.el7 will be installed
+---> Package aether-util.noarch 0:1.13.1-13.el7 will be installed
+---> Package aopalliance.noarch 0:1.0-8.el7 will be installed
+---> Package apache-commons-cli.noarch 0:1.2-13.el7 will be installed
+---> Package apache-commons-codec.noarch 0:1.8-7.el7 will be installed
+---> Package apache-commons-logging.noarch 0:1.1.2-7.el7 will be installed
+--> Processing Dependency: mvn(logkit:logkit) for package: apache-commons-logging-1.1.2-7.el7.noarch
+--> Processing Dependency: mvn(log4j:log4j) for package: apache-commons-logging-1.1.2-7.el7.noarch
+--> Processing Dependency: mvn(avalon-framework:avalon-framework-api) for package: apache-commons-logging-1.1.2-7.el7.noarch
+---> Package atinject.noarch 0:1-13.20100611svn86.el7 will be installed
+---> Package cglib.noarch 0:2.2-18.el7 will be installed
+---> Package google-guice.noarch 0:3.1.3-9.el7 will be installed
+--> Processing Dependency: mvn(org.slf4j:slf4j-api) for package: google-guice-3.1.3-9.el7.noarch
+---> Package guava.noarch 0:13.0-6.el7 will be installed
+---> Package httpcomponents-client.noarch 0:4.2.5-5.el7_0 will be installed
+---> Package httpcomponents-core.noarch 0:4.2.4-6.el7 will be installed
+---> Package java-1.8.0-openjdk-devel.x86_64 1:1.8.0.212.b04-0.el7_6 will be installed
+---> Package maven-wagon.noarch 0:2.4-3.el7 will be installed
+--> Processing Dependency: mvn(xerces:xercesImpl) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(org.jsoup:jsoup) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-interactivity-api) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(nekohtml:nekohtml) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(commons-net:commons-net) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(commons-lang:commons-lang) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(commons-io:commons-io) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(commons-httpclient:commons-httpclient) for package: maven-wagon-2.4-3.el7.noarch
+--> Processing Dependency: mvn(com.jcraft:jsch) for package: maven-wagon-2.4-3.el7.noarch
+---> Package objectweb-asm.noarch 0:3.3.1-9.el7 will be installed
+--> Processing Dependency: xml-commons-jaxp-1.3-apis for package: objectweb-asm-3.3.1-9.el7.noarch
+---> Package plexus-cipher.noarch 0:1.7-5.el7 will be installed
+---> Package plexus-classworlds.noarch 0:2.4.2-8.el7 will be installed
+---> Package plexus-containers-component-annotations.noarch 0:1.5.5-14.el7 will be installed
+---> Package plexus-containers-container-default.noarch 0:1.5.5-14.el7 will be installed
+--> Processing Dependency: mvn(org.apache.xbean:xbean-reflect) for package: plexus-containers-container-default-1.5.5-14.el7.noarch
+--> Processing Dependency: mvn(junit:junit) for package: plexus-containers-container-default-1.5.5-14.el7.noarch
+---> Package plexus-interpolation.noarch 0:1.15-8.el7 will be installed
+---> Package plexus-sec-dispatcher.noarch 0:1.4-13.el7 will be installed
+---> Package plexus-utils.noarch 0:3.0.9-9.el7 will be installed
+---> Package sisu-inject-bean.noarch 0:2.3.0-11.el7 will be installed
+--> Processing Dependency: mvn(javax.enterprise:cdi-api) for package: sisu-inject-bean-2.3.0-11.el7.noarch
+---> Package sisu-inject-plexus.noarch 0:2.3.0-11.el7 will be installed
+--> Running transaction check
+---> Package apache-commons-io.noarch 1:2.4-12.el7 will be installed
+---> Package apache-commons-lang.noarch 0:2.6-15.el7 will be installed
+---> Package apache-commons-net.noarch 0:3.2-8.el7.centos will be installed
+---> Package avalon-framework.noarch 0:4.3-10.el7 will be installed
+--> Processing Dependency: xalan-j2 for package: avalon-framework-4.3-10.el7.noarch
+---> Package avalon-logkit.noarch 0:2.1-14.el7 will be installed
+--> Processing Dependency: tomcat-servlet-3.0-api for package: avalon-logkit-2.1-14.el7.noarch
+--> Processing Dependency: jms for package: avalon-logkit-2.1-14.el7.noarch
+---> Package cdi-api.noarch 0:1.0-11.SP4.el7 will be installed
+--> Processing Dependency: jboss-interceptors-1.1-api for package: cdi-api-1.0-11.SP4.el7.noarch
+--> Processing Dependency: jboss-el-2.2-api for package: cdi-api-1.0-11.SP4.el7.noarch
+--> Processing Dependency: jboss-ejb-3.1-api for package: cdi-api-1.0-11.SP4.el7.noarch
+--> Processing Dependency: geronimo-annotation for package: cdi-api-1.0-11.SP4.el7.noarch
+---> Package jakarta-commons-httpclient.noarch 1:3.1-16.el7_0 will be installed
+---> Package jsch.noarch 0:0.1.50-5.el7 will be installed
+--> Processing Dependency: jzlib >= 1.0.5 for package: jsch-0.1.50-5.el7.noarch
+---> Package jsoup.noarch 0:1.6.1-10.el7 will be installed
+---> Package junit.noarch 0:4.11-8.el7 will be installed
+--> Processing Dependency: osgi(org.hamcrest.core) for package: junit-4.11-8.el7.noarch
+--> Processing Dependency: hamcrest for package: junit-4.11-8.el7.noarch
+---> Package log4j.noarch 0:1.2.17-16.el7_4 will be installed
+--> Processing Dependency: mvn(javax.mail:mail) for package: log4j-1.2.17-16.el7_4.noarch
+---> Package nekohtml.noarch 0:1.9.14-13.el7 will be installed
+--> Processing Dependency: bcel for package: nekohtml-1.9.14-13.el7.noarch
+---> Package plexus-interactivity.noarch 0:1.0-0.14.alpha6.el7 will be installed
+--> Processing Dependency: mvn(org.codehaus.plexus:plexus-component-api) for package: plexus-interactivity-1.0-0.14.alpha6.el7.noarch
+--> Processing Dependency: mvn(jline:jline) for package: plexus-interactivity-1.0-0.14.alpha6.el7.noarch
+---> Package slf4j.noarch 0:1.7.4-4.el7_4 will be installed
+--> Processing Dependency: mvn(javassist:javassist) for package: slf4j-1.7.4-4.el7_4.noarch
+--> Processing Dependency: mvn(ch.qos.cal10n:cal10n-api) for package: slf4j-1.7.4-4.el7_4.noarch
+---> Package xbean.noarch 0:3.13-6.el7 will be installed
+--> Processing Dependency: mvn(org.apache.felix:org.apache.felix.framework) for package: xbean-3.13-6.el7.noarch
+---> Package xerces-j2.noarch 0:2.11.0-17.el7_0 will be installed
+--> Processing Dependency: xml-commons-resolver >= 1.2 for package: xerces-j2-2.11.0-17.el7_0.noarch
+--> Processing Dependency: osgi(org.apache.xml.resolver) for package: xerces-j2-2.11.0-17.el7_0.noarch
+---> Package xml-commons-apis.noarch 0:1.4.01-16.el7 will be installed
+--> Running transaction check
+---> Package bcel.noarch 0:5.2-18.el7 will be installed
+--> Processing Dependency: mvn(regexp:regexp) for package: bcel-5.2-18.el7.noarch
+---> Package cal10n.noarch 0:0.7.7-4.el7 will be installed
+---> Package felix-framework.noarch 0:4.2.1-5.el7 will be installed
+---> Package geronimo-annotation.noarch 0:1.0-15.el7 will be installed
+---> Package geronimo-jms.noarch 0:1.1.1-19.el7 will be installed
+---> Package hamcrest.noarch 0:1.3-6.el7 will be installed
+--> Processing Dependency: qdox for package: hamcrest-1.3-6.el7.noarch
+--> Processing Dependency: easymock2 for package: hamcrest-1.3-6.el7.noarch
+---> Package javamail.noarch 0:1.4.6-8.el7 will be installed
+---> Package javassist.noarch 0:3.16.1-10.el7 will be installed
+---> Package jboss-ejb-3.1-api.noarch 0:1.0.2-10.el7 will be installed
+--> Processing Dependency: jboss-transaction-1.1-api for package: jboss-ejb-3.1-api-1.0.2-10.el7.noarch
+--> Processing Dependency: jboss-jaxrpc-1.1-api for package: jboss-ejb-3.1-api-1.0.2-10.el7.noarch
+---> Package jboss-el-2.2-api.noarch 0:1.0.1-0.7.20120212git2fabd8.el7 will be installed
+---> Package jboss-interceptors-1.1-api.noarch 0:1.0.2-0.9.20120319git49a904.el7 will be installed
+---> Package jline.noarch 0:1.0-8.el7 will be installed
+---> Package jzlib.noarch 0:1.1.1-6.el7 will be installed
+---> Package plexus-component-api.noarch 0:1.0-0.16.alpha15.el7 will be installed
+---> Package tomcat-servlet-3.0-api.noarch 0:7.0.76-9.el7_6 will be installed
+---> Package xalan-j2.noarch 0:2.7.1-23.el7 will be installed
+---> Package xml-commons-resolver.noarch 0:1.2-15.el7 will be installed
+--> Running transaction check
+---> Package easymock2.noarch 0:2.5.2-12.el7 will be installed
+---> Package jboss-jaxrpc-1.1-api.noarch 0:1.0.1-7.el7 will be installed
+--> Processing Dependency: jboss-servlet-3.0-api for package: jboss-jaxrpc-1.1-api-1.0.1-7.el7.noarch
+---> Package jboss-transaction-1.1-api.noarch 0:1.0.1-8.el7 will be installed
+---> Package qdox.noarch 0:1.12.1-10.el7 will be installed
+---> Package regexp.noarch 0:1.5-13.el7 will be installed
+--> Running transaction check
+---> Package jboss-servlet-3.0-api.noarch 0:1.0.1-9.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                       Arch   Version                     Repository
+                                                                           Size
+================================================================================
+Installing:
+ maven                         noarch 3.0.5-17.el7                base    1.3 M
+Installing for dependencies:
+ aether-api                    noarch 1.13.1-13.el7               base     89 k
+ aether-connector-wagon        noarch 1.13.1-13.el7               base     34 k
+ aether-impl                   noarch 1.13.1-13.el7               base    124 k
+ aether-spi                    noarch 1.13.1-13.el7               base     19 k
+ aether-util                   noarch 1.13.1-13.el7               base    119 k
+ aopalliance                   noarch 1.0-8.el7                   base     11 k
+ apache-commons-cli            noarch 1.2-13.el7                  base     50 k
+ apache-commons-codec          noarch 1.8-7.el7                   base    223 k
+ apache-commons-io             noarch 1:2.4-12.el7                base    189 k
+ apache-commons-lang           noarch 2.6-15.el7                  base    276 k
+ apache-commons-logging        noarch 1.1.2-7.el7                 base     78 k
+ apache-commons-net            noarch 3.2-8.el7.centos            base    261 k
+ atinject                      noarch 1-13.20100611svn86.el7      base     13 k
+ avalon-framework              noarch 4.3-10.el7                  base     88 k
+ avalon-logkit                 noarch 2.1-14.el7                  base     87 k
+ bcel                          noarch 5.2-18.el7                  base    469 k
+ cal10n                        noarch 0.7.7-4.el7                 base     36 k
+ cdi-api                       noarch 1.0-11.SP4.el7              base     41 k
+ cglib                         noarch 2.2-18.el7                  base    255 k
+ easymock2                     noarch 2.5.2-12.el7                base     92 k
+ felix-framework               noarch 4.2.1-5.el7                 base    481 k
+ geronimo-annotation           noarch 1.0-15.el7                  base     23 k
+ geronimo-jms                  noarch 1.1.1-19.el7                base     31 k
+ google-guice                  noarch 3.1.3-9.el7                 base    385 k
+ guava                         noarch 13.0-6.el7                  base    1.6 M
+ hamcrest                      noarch 1.3-6.el7                   base    124 k
+ httpcomponents-client         noarch 4.2.5-5.el7_0               base    425 k
+ httpcomponents-core           noarch 4.2.4-6.el7                 base    466 k
+ jakarta-commons-httpclient    noarch 1:3.1-16.el7_0              base    241 k
+ java-1.8.0-openjdk-devel      x86_64 1:1.8.0.212.b04-0.el7_6     updates 9.8 M
+ javamail                      noarch 1.4.6-8.el7                 base    758 k
+ javassist                     noarch 3.16.1-10.el7               base    627 k
+ jboss-ejb-3.1-api             noarch 1.0.2-10.el7                base     54 k
+ jboss-el-2.2-api              noarch 1.0.1-0.7.20120212git2fabd8.el7
+                                                                  base     44 k
+ jboss-interceptors-1.1-api    noarch 1.0.2-0.9.20120319git49a904.el7
+                                                                  base     27 k
+ jboss-jaxrpc-1.1-api          noarch 1.0.1-7.el7                 base     44 k
+ jboss-servlet-3.0-api         noarch 1.0.1-9.el7                 base     82 k
+ jboss-transaction-1.1-api     noarch 1.0.1-8.el7                 base     40 k
+ jline                         noarch 1.0-8.el7                   base     69 k
+ jsch                          noarch 0.1.50-5.el7                base    239 k
+ jsoup                         noarch 1.6.1-10.el7                base    263 k
+ junit                         noarch 4.11-8.el7                  base    261 k
+ jzlib                         noarch 1.1.1-6.el7                 base     72 k
+ log4j                         noarch 1.2.17-16.el7_4             base    444 k
+ maven-wagon                   noarch 2.4-3.el7                   base    187 k
+ nekohtml                      noarch 1.9.14-13.el7               base    152 k
+ objectweb-asm                 noarch 3.3.1-9.el7                 base    197 k
+ plexus-cipher                 noarch 1.7-5.el7                   base     22 k
+ plexus-classworlds            noarch 2.4.2-8.el7                 base     54 k
+ plexus-component-api          noarch 1.0-0.16.alpha15.el7        base     27 k
+ plexus-containers-component-annotations
+                               noarch 1.5.5-14.el7                base     11 k
+ plexus-containers-container-default
+                               noarch 1.5.5-14.el7                base    183 k
+ plexus-interactivity          noarch 1.0-0.14.alpha6.el7         base     17 k
+ plexus-interpolation          noarch 1.15-8.el7                  base     57 k
+ plexus-sec-dispatcher         noarch 1.4-13.el7                  base     29 k
+ plexus-utils                  noarch 3.0.9-9.el7                 base    225 k
+ qdox                          noarch 1.12.1-10.el7               base    170 k
+ regexp                        noarch 1.5-13.el7                  base     47 k
+ sisu-inject-bean              noarch 2.3.0-11.el7                base    181 k
+ sisu-inject-plexus            noarch 2.3.0-11.el7                base    179 k
+ slf4j                         noarch 1.7.4-4.el7_4               base    170 k
+ tomcat-servlet-3.0-api        noarch 7.0.76-9.el7_6              updates 212 k
+ xalan-j2                      noarch 2.7.1-23.el7                base    1.9 M
+ xbean                         noarch 3.13-6.el7                  base    376 k
+ xerces-j2                     noarch 2.11.0-17.el7_0             base    1.1 M
+ xml-commons-apis              noarch 1.4.01-16.el7               base    227 k
+ xml-commons-resolver          noarch 1.2-15.el7                  base    108 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+67 Dependent packages)
+
+Total download size: 26 M
+Installed size: 61 M
+Downloading packages:
+(1/68): aether-connector-wagon-1.13.1-13.el7.noarch.rpm    |  34 kB   00:00
+(2/68): aether-api-1.13.1-13.el7.noarch.rpm                |  89 kB   00:00
+(3/68): aether-spi-1.13.1-13.el7.noarch.rpm                |  19 kB   00:00
+(4/68): aether-impl-1.13.1-13.el7.noarch.rpm               | 124 kB   00:00
+(5/68): aopalliance-1.0-8.el7.noarch.rpm                   |  11 kB   00:00
+(6/68): aether-util-1.13.1-13.el7.noarch.rpm               | 119 kB   00:00
+(7/68): apache-commons-cli-1.2-13.el7.noarch.rpm           |  50 kB   00:00
+(8/68): apache-commons-codec-1.8-7.el7.noarch.rpm          | 223 kB   00:00
+(9/68): apache-commons-io-2.4-12.el7.noarch.rpm            | 189 kB   00:00
+(10/68): apache-commons-logging-1.1.2-7.el7.noarch.rpm     |  78 kB   00:00
+(11/68): apache-commons-lang-2.6-15.el7.noarch.rpm         | 276 kB   00:00
+(12/68): atinject-1-13.20100611svn86.el7.noarch.rpm        |  13 kB   00:00
+(13/68): apache-commons-net-3.2-8.el7.centos.noarch.rpm    | 261 kB   00:00
+(14/68): avalon-framework-4.3-10.el7.noarch.rpm            |  88 kB   00:00
+(15/68): avalon-logkit-2.1-14.el7.noarch.rpm               |  87 kB   00:00
+(16/68): cal10n-0.7.7-4.el7.noarch.rpm                     |  36 kB   00:00
+(17/68): bcel-5.2-18.el7.noarch.rpm                        | 469 kB   00:00
+(18/68): cdi-api-1.0-11.SP4.el7.noarch.rpm                 |  41 kB   00:00
+(19/68): easymock2-2.5.2-12.el7.noarch.rpm                 |  92 kB   00:00
+(20/68): cglib-2.2-18.el7.noarch.rpm                       | 255 kB   00:00
+(21/68): geronimo-annotation-1.0-15.el7.noarch.rpm         |  23 kB   00:00
+(22/68): geronimo-jms-1.1.1-19.el7.noarch.rpm              |  31 kB   00:00
+(23/68): felix-framework-4.2.1-5.el7.noarch.rpm            | 481 kB   00:00
+(24/68): google-guice-3.1.3-9.el7.noarch.rpm               | 385 kB   00:00
+(25/68): hamcrest-1.3-6.el7.noarch.rpm                     | 124 kB   00:00
+(26/68): guava-13.0-6.el7.noarch.rpm                       | 1.6 MB   00:00
+(27/68): httpcomponents-client-4.2.5-5.el7_0.noarch.rpm    | 425 kB   00:00
+(28/68): httpcomponents-core-4.2.4-6.el7.noarch.rpm        | 466 kB   00:00
+(29/68): jakarta-commons-httpclient-3.1-16.el7_0.noarch.rp | 241 kB   00:00
+(30/68): javamail-1.4.6-8.el7.noarch.rpm                   | 758 kB   00:00
+(31/68): jboss-ejb-3.1-api-1.0.2-10.el7.noarch.rpm         |  54 kB   00:00
+(32/68): javassist-3.16.1-10.el7.noarch.rpm                | 627 kB   00:00
+(33/68): jboss-el-2.2-api-1.0.1-0.7.20120212git2fabd8.el7. |  44 kB   00:00
+(34/68): jboss-interceptors-1.1-api-1.0.2-0.9.20120319git4 |  27 kB   00:00
+(35/68): jboss-jaxrpc-1.1-api-1.0.1-7.el7.noarch.rpm       |  44 kB   00:00
+(36/68): jboss-servlet-3.0-api-1.0.1-9.el7.noarch.rpm      |  82 kB   00:00
+(37/68): jboss-transaction-1.1-api-1.0.1-8.el7.noarch.rpm  |  40 kB   00:00
+(38/68): jline-1.0-8.el7.noarch.rpm                        |  69 kB   00:00
+(39/68): jsch-0.1.50-5.el7.noarch.rpm                      | 239 kB   00:00
+(40/68): jsoup-1.6.1-10.el7.noarch.rpm                     | 263 kB   00:00
+(41/68): jzlib-1.1.1-6.el7.noarch.rpm                      |  72 kB   00:00
+(42/68): log4j-1.2.17-16.el7_4.noarch.rpm                  | 444 kB   00:00
+(43/68): junit-4.11-8.el7.noarch.rpm                       | 261 kB   00:00
+(44/68): maven-3.0.5-17.el7.noarch.rpm                     | 1.3 MB   00:00
+(45/68): maven-wagon-2.4-3.el7.noarch.rpm                  | 187 kB   00:00
+(46/68): objectweb-asm-3.3.1-9.el7.noarch.rpm              | 197 kB   00:00
+(47/68): nekohtml-1.9.14-13.el7.noarch.rpm                 | 152 kB   00:00
+(48/68): plexus-cipher-1.7-5.el7.noarch.rpm                |  22 kB   00:00
+(49/68): plexus-classworlds-2.4.2-8.el7.noarch.rpm         |  54 kB   00:00
+(50/68): plexus-component-api-1.0-0.16.alpha15.el7.noarch. |  27 kB   00:00
+(51/68): plexus-containers-component-annotations-1.5.5-14. |  11 kB   00:00
+(52/68): plexus-containers-container-default-1.5.5-14.el7. | 183 kB   00:00
+(53/68): plexus-interactivity-1.0-0.14.alpha6.el7.noarch.r |  17 kB   00:00
+(54/68): java-1.8.0-openjdk-devel-1.8.0.212.b04-0.el7_6.x8 | 9.8 MB   00:00
+(55/68): plexus-interpolation-1.15-8.el7.noarch.rpm        |  57 kB   00:00
+(56/68): plexus-sec-dispatcher-1.4-13.el7.noarch.rpm       |  29 kB   00:00
+(57/68): plexus-utils-3.0.9-9.el7.noarch.rpm               | 225 kB   00:00
+(58/68): regexp-1.5-13.el7.noarch.rpm                      |  47 kB   00:00
+(59/68): sisu-inject-bean-2.3.0-11.el7.noarch.rpm          | 181 kB   00:00
+(60/68): sisu-inject-plexus-2.3.0-11.el7.noarch.rpm        | 179 kB   00:00
+(61/68): qdox-1.12.1-10.el7.noarch.rpm                     | 170 kB   00:00
+(62/68): slf4j-1.7.4-4.el7_4.noarch.rpm                    | 170 kB   00:00
+(63/68): tomcat-servlet-3.0-api-7.0.76-9.el7_6.noarch.rpm  | 212 kB   00:00
+(64/68): xbean-3.13-6.el7.noarch.rpm                       | 376 kB   00:00
+(65/68): xerces-j2-2.11.0-17.el7_0.noarch.rpm              | 1.1 MB   00:00
+(66/68): xml-commons-apis-1.4.01-16.el7.noarch.rpm         | 227 kB   00:00
+(67/68): xml-commons-resolver-1.2-15.el7.noarch.rpm        | 108 kB   00:00
+(68/68): xalan-j2-2.7.1-23.el7.noarch.rpm                  | 1.9 MB   00:00
+--------------------------------------------------------------------------------
+Total                                               16 MB/s |  26 MB  00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : plexus-utils-3.0.9-9.el7.noarch                             1/68
+  Installing : aether-api-1.13.1-13.el7.noarch                             2/68
+  Installing : plexus-classworlds-2.4.2-8.el7.noarch                       3/68
+  Installing : xml-commons-apis-1.4.01-16.el7.noarch                       4/68
+  Installing : objectweb-asm-3.3.1-9.el7.noarch                            5/68
+  Installing : aether-util-1.13.1-13.el7.noarch                            6/68
+  Installing : aether-spi-1.13.1-13.el7.noarch                             7/68
+  Installing : httpcomponents-core-4.2.4-6.el7.noarch                      8/68
+  Installing : atinject-1-13.20100611svn86.el7.noarch                      9/68
+  Installing : guava-13.0-6.el7.noarch                                    10/68
+  Installing : apache-commons-codec-1.8-7.el7.noarch                      11/68
+  Installing : cglib-2.2-18.el7.noarch                                    12/68
+  Installing : plexus-cipher-1.7-5.el7.noarch                             13/68
+  Installing : aopalliance-1.0-8.el7.noarch                               14/68
+  Installing : geronimo-jms-1.1.1-19.el7.noarch                           15/68
+  Installing : apache-commons-lang-2.6-15.el7.noarch                      16/68
+  Installing : plexus-containers-component-annotations-1.5.5-14.el7.noa   17/68
+  Installing : plexus-sec-dispatcher-1.4-13.el7.noarch                    18/68
+  Installing : aether-impl-1.13.1-13.el7.noarch                           19/68
+  Installing : xml-commons-resolver-1.2-15.el7.noarch                     20/68
+  Installing : xalan-j2-2.7.1-23.el7.noarch                               21/68
+  Installing : xerces-j2-2.11.0-17.el7_0.noarch                           22/68
+  Installing : plexus-component-api-1.0-0.16.alpha15.el7.noarch           23/68
+  Installing : regexp-1.5-13.el7.noarch                                   24/68
+  Installing : bcel-5.2-18.el7.noarch                                     25/68
+  Installing : nekohtml-1.9.14-13.el7.noarch                              26/68
+  Installing : jboss-transaction-1.1-api-1.0.1-8.el7.noarch               27/68
+  Installing : 1:apache-commons-io-2.4-12.el7.noarch                      28/68
+  Installing : javassist-3.16.1-10.el7.noarch                             29/68
+  Installing : jboss-interceptors-1.1-api-1.0.2-0.9.20120319git49a904.e   30/68
+  Installing : easymock2-2.5.2-12.el7.noarch                              31/68
+  Installing : hamcrest-1.3-6.el7.noarch                                  32/68
+  Installing : junit-4.11-8.el7.noarch                                    33/68
+  Installing : qdox-1.12.1-10.el7.noarch                                  34/68
+  Installing : cal10n-0.7.7-4.el7.noarch                                  35/68
+  Installing : jboss-servlet-3.0-api-1.0.1-9.el7.noarch                   36/68
+  Installing : jboss-jaxrpc-1.1-api-1.0.1-7.el7.noarch                    37/68
+  Installing : jboss-ejb-3.1-api-1.0.2-10.el7.noarch                      38/68
+  Installing : geronimo-annotation-1.0-15.el7.noarch                      39/68
+  Installing : plexus-interpolation-1.15-8.el7.noarch                     40/68
+  Installing : apache-commons-cli-1.2-13.el7.noarch                       41/68
+  Installing : jboss-el-2.2-api-1.0.1-0.7.20120212git2fabd8.el7.noarch    42/68
+  Installing : cdi-api-1.0-11.SP4.el7.noarch                              43/68
+  Installing : jline-1.0-8.el7.noarch                                     44/68
+  Installing : plexus-interactivity-1.0-0.14.alpha6.el7.noarch            45/68
+  Installing : jsoup-1.6.1-10.el7.noarch                                  46/68
+  Installing : felix-framework-4.2.1-5.el7.noarch                         47/68
+  Installing : apache-commons-net-3.2-8.el7.centos.noarch                 48/68
+  Installing : 1:java-1.8.0-openjdk-devel-1.8.0.212.b04-0.el7_6.x86_64    49/68
+  Installing : jzlib-1.1.1-6.el7.noarch                                   50/68
+  Installing : jsch-0.1.50-5.el7.noarch                                   51/68
+  Installing : javamail-1.4.6-8.el7.noarch                                52/68
+  Installing : log4j-1.2.17-16.el7_4.noarch                               53/68
+  Installing : tomcat-servlet-3.0-api-7.0.76-9.el7_6.noarch               54/68
+  Installing : avalon-framework-4.3-10.el7.noarch                         55/68
+  Installing : avalon-logkit-2.1-14.el7.noarch                            56/68
+  Installing : apache-commons-logging-1.1.2-7.el7.noarch                  57/68
+  Installing : slf4j-1.7.4-4.el7_4.noarch                                 58/68
+  Installing : google-guice-3.1.3-9.el7.noarch                            59/68
+  Installing : sisu-inject-bean-2.3.0-11.el7.noarch                       60/68
+  Installing : sisu-inject-plexus-2.3.0-11.el7.noarch                     61/68
+  Installing : httpcomponents-client-4.2.5-5.el7_0.noarch                 62/68
+  Installing : xbean-3.13-6.el7.noarch                                    63/68
+  Installing : plexus-containers-container-default-1.5.5-14.el7.noarch    64/68
+  Installing : 1:jakarta-commons-httpclient-3.1-16.el7_0.noarch           65/68
+  Installing : maven-wagon-2.4-3.el7.noarch                               66/68
+  Installing : aether-connector-wagon-1.13.1-13.el7.noarch                67/68
+  Installing : maven-3.0.5-17.el7.noarch                                  68/68
+  Verifying  : plexus-containers-component-annotations-1.5.5-14.el7.noa    1/68
+  Verifying  : jsch-0.1.50-5.el7.noarch                                    2/68
+  Verifying  : avalon-logkit-2.1-14.el7.noarch                             3/68
+  Verifying  : sisu-inject-bean-2.3.0-11.el7.noarch                        4/68
+  Verifying  : tomcat-servlet-3.0-api-7.0.76-9.el7_6.noarch                5/68
+  Verifying  : aether-util-1.13.1-13.el7.noarch                            6/68
+  Verifying  : maven-wagon-2.4-3.el7.noarch                                7/68
+  Verifying  : javamail-1.4.6-8.el7.noarch                                 8/68
+  Verifying  : bcel-5.2-18.el7.noarch                                      9/68
+  Verifying  : 1:jakarta-commons-httpclient-3.1-16.el7_0.noarch           10/68
+  Verifying  : junit-4.11-8.el7.noarch                                    11/68
+  Verifying  : cdi-api-1.0-11.SP4.el7.noarch                              12/68
+  Verifying  : xml-commons-resolver-1.2-15.el7.noarch                     13/68
+  Verifying  : plexus-component-api-1.0-0.16.alpha15.el7.noarch           14/68
+  Verifying  : jzlib-1.1.1-6.el7.noarch                                   15/68
+  Verifying  : apache-commons-codec-1.8-7.el7.noarch                      16/68
+  Verifying  : 1:java-1.8.0-openjdk-devel-1.8.0.212.b04-0.el7_6.x86_64    17/68
+  Verifying  : log4j-1.2.17-16.el7_4.noarch                               18/68
+  Verifying  : plexus-classworlds-2.4.2-8.el7.noarch                      19/68
+  Verifying  : apache-commons-lang-2.6-15.el7.noarch                      20/68
+  Verifying  : apache-commons-net-3.2-8.el7.centos.noarch                 21/68
+  Verifying  : avalon-framework-4.3-10.el7.noarch                         22/68
+  Verifying  : httpcomponents-client-4.2.5-5.el7_0.noarch                 23/68
+  Verifying  : maven-3.0.5-17.el7.noarch                                  24/68
+  Verifying  : felix-framework-4.2.1-5.el7.noarch                         25/68
+  Verifying  : jsoup-1.6.1-10.el7.noarch                                  26/68
+  Verifying  : guava-13.0-6.el7.noarch                                    27/68
+  Verifying  : jline-1.0-8.el7.noarch                                     28/68
+  Verifying  : xerces-j2-2.11.0-17.el7_0.noarch                           29/68
+  Verifying  : aether-spi-1.13.1-13.el7.noarch                            30/68
+  Verifying  : atinject-1-13.20100611svn86.el7.noarch                     31/68
+  Verifying  : hamcrest-1.3-6.el7.noarch                                  32/68
+  Verifying  : jboss-el-2.2-api-1.0.1-0.7.20120212git2fabd8.el7.noarch    33/68
+  Verifying  : httpcomponents-core-4.2.4-6.el7.noarch                     34/68
+  Verifying  : aether-connector-wagon-1.13.1-13.el7.noarch                35/68
+  Verifying  : plexus-interactivity-1.0-0.14.alpha6.el7.noarch            36/68
+  Verifying  : geronimo-jms-1.1.1-19.el7.noarch                           37/68
+  Verifying  : aopalliance-1.0-8.el7.noarch                               38/68
+  Verifying  : apache-commons-cli-1.2-13.el7.noarch                       39/68
+  Verifying  : xbean-3.13-6.el7.noarch                                    40/68
+  Verifying  : plexus-interpolation-1.15-8.el7.noarch                     41/68
+  Verifying  : google-guice-3.1.3-9.el7.noarch                            42/68
+  Verifying  : jboss-ejb-3.1-api-1.0.2-10.el7.noarch                      43/68
+  Verifying  : geronimo-annotation-1.0-15.el7.noarch                      44/68
+  Verifying  : xml-commons-apis-1.4.01-16.el7.noarch                      45/68
+  Verifying  : objectweb-asm-3.3.1-9.el7.noarch                           46/68
+  Verifying  : xalan-j2-2.7.1-23.el7.noarch                               47/68
+  Verifying  : jboss-servlet-3.0-api-1.0.1-9.el7.noarch                   48/68
+  Verifying  : cal10n-0.7.7-4.el7.noarch                                  49/68
+  Verifying  : easymock2-2.5.2-12.el7.noarch                              50/68
+  Verifying  : aether-impl-1.13.1-13.el7.noarch                           51/68
+  Verifying  : sisu-inject-plexus-2.3.0-11.el7.noarch                     52/68
+  Verifying  : jboss-interceptors-1.1-api-1.0.2-0.9.20120319git49a904.e   53/68
+  Verifying  : apache-commons-logging-1.1.2-7.el7.noarch                  54/68
+  Verifying  : cglib-2.2-18.el7.noarch                                    55/68
+  Verifying  : nekohtml-1.9.14-13.el7.noarch                              56/68
+  Verifying  : plexus-containers-container-default-1.5.5-14.el7.noarch    57/68
+  Verifying  : plexus-cipher-1.7-5.el7.noarch                             58/68
+  Verifying  : plexus-utils-3.0.9-9.el7.noarch                            59/68
+  Verifying  : slf4j-1.7.4-4.el7_4.noarch                                 60/68
+  Verifying  : qdox-1.12.1-10.el7.noarch                                  61/68
+  Verifying  : javassist-3.16.1-10.el7.noarch                             62/68
+  Verifying  : aether-api-1.13.1-13.el7.noarch                            63/68
+  Verifying  : plexus-sec-dispatcher-1.4-13.el7.noarch                    64/68
+  Verifying  : 1:apache-commons-io-2.4-12.el7.noarch                      65/68
+  Verifying  : jboss-transaction-1.1-api-1.0.1-8.el7.noarch               66/68
+  Verifying  : jboss-jaxrpc-1.1-api-1.0.1-7.el7.noarch                    67/68
+  Verifying  : regexp-1.5-13.el7.noarch                                   68/68
+
+Installed:
+  maven.noarch 0:3.0.5-17.el7
+
+Dependency Installed:
+  aether-api.noarch 0:1.13.1-13.el7
+  aether-connector-wagon.noarch 0:1.13.1-13.el7
+  aether-impl.noarch 0:1.13.1-13.el7
+  aether-spi.noarch 0:1.13.1-13.el7
+  aether-util.noarch 0:1.13.1-13.el7
+  aopalliance.noarch 0:1.0-8.el7
+  apache-commons-cli.noarch 0:1.2-13.el7
+  apache-commons-codec.noarch 0:1.8-7.el7
+  apache-commons-io.noarch 1:2.4-12.el7
+  apache-commons-lang.noarch 0:2.6-15.el7
+  apache-commons-logging.noarch 0:1.1.2-7.el7
+  apache-commons-net.noarch 0:3.2-8.el7.centos
+  atinject.noarch 0:1-13.20100611svn86.el7
+  avalon-framework.noarch 0:4.3-10.el7
+  avalon-logkit.noarch 0:2.1-14.el7
+  bcel.noarch 0:5.2-18.el7
+  cal10n.noarch 0:0.7.7-4.el7
+  cdi-api.noarch 0:1.0-11.SP4.el7
+  cglib.noarch 0:2.2-18.el7
+  easymock2.noarch 0:2.5.2-12.el7
+  felix-framework.noarch 0:4.2.1-5.el7
+  geronimo-annotation.noarch 0:1.0-15.el7
+  geronimo-jms.noarch 0:1.1.1-19.el7
+  google-guice.noarch 0:3.1.3-9.el7
+  guava.noarch 0:13.0-6.el7
+  hamcrest.noarch 0:1.3-6.el7
+  httpcomponents-client.noarch 0:4.2.5-5.el7_0
+  httpcomponents-core.noarch 0:4.2.4-6.el7
+  jakarta-commons-httpclient.noarch 1:3.1-16.el7_0
+  java-1.8.0-openjdk-devel.x86_64 1:1.8.0.212.b04-0.el7_6
+  javamail.noarch 0:1.4.6-8.el7
+  javassist.noarch 0:3.16.1-10.el7
+  jboss-ejb-3.1-api.noarch 0:1.0.2-10.el7
+  jboss-el-2.2-api.noarch 0:1.0.1-0.7.20120212git2fabd8.el7
+  jboss-interceptors-1.1-api.noarch 0:1.0.2-0.9.20120319git49a904.el7
+  jboss-jaxrpc-1.1-api.noarch 0:1.0.1-7.el7
+  jboss-servlet-3.0-api.noarch 0:1.0.1-9.el7
+  jboss-transaction-1.1-api.noarch 0:1.0.1-8.el7
+  jline.noarch 0:1.0-8.el7
+  jsch.noarch 0:0.1.50-5.el7
+  jsoup.noarch 0:1.6.1-10.el7
+  junit.noarch 0:4.11-8.el7
+  jzlib.noarch 0:1.1.1-6.el7
+  log4j.noarch 0:1.2.17-16.el7_4
+  maven-wagon.noarch 0:2.4-3.el7
+  nekohtml.noarch 0:1.9.14-13.el7
+  objectweb-asm.noarch 0:3.3.1-9.el7
+  plexus-cipher.noarch 0:1.7-5.el7
+  plexus-classworlds.noarch 0:2.4.2-8.el7
+  plexus-component-api.noarch 0:1.0-0.16.alpha15.el7
+  plexus-containers-component-annotations.noarch 0:1.5.5-14.el7
+  plexus-containers-container-default.noarch 0:1.5.5-14.el7
+  plexus-interactivity.noarch 0:1.0-0.14.alpha6.el7
+  plexus-interpolation.noarch 0:1.15-8.el7
+  plexus-sec-dispatcher.noarch 0:1.4-13.el7
+  plexus-utils.noarch 0:3.0.9-9.el7
+  qdox.noarch 0:1.12.1-10.el7
+  regexp.noarch 0:1.5-13.el7
+  sisu-inject-bean.noarch 0:2.3.0-11.el7
+  sisu-inject-plexus.noarch 0:2.3.0-11.el7
+  slf4j.noarch 0:1.7.4-4.el7_4
+  tomcat-servlet-3.0-api.noarch 0:7.0.76-9.el7_6
+  xalan-j2.noarch 0:2.7.1-23.el7
+  xbean.noarch 0:3.13-6.el7
+  xerces-j2.noarch 0:2.11.0-17.el7_0
+  xml-commons-apis.noarch 0:1.4.01-16.el7
+  xml-commons-resolver.noarch 0:1.2-15.el7
+
+Complete!
+[root@ip-192-168-2-162 ~]# ls
+anaconda-ks.cfg  original-ks.cfg
+[root@ip-192-168-2-162 ~]# cd /var/lib/jenkins/workspace/
+[root@ip-192-168-2-162 workspace]# ls
+demo
+[root@ip-192-168-2-162 workspace]# tree demo/
+demo/
++-- Jenkinsfile
++-- multi-module
+¦   +-- server
+¦       +-- target
+¦           +-- classes
+¦           +-- generated-sources
+¦               +-- annotations
++-- pom.xml
++-- src
+¦   +-- main
+¦       +-- webapp
+¦           +-- index.jsp
+¦           +-- WEB-INF
+¦               +-- web.xml
++-- target
+    +-- hippo
+    ¦   +-- index.jsp
+    ¦   +-- META-INF
+    ¦   +-- WEB-INF
+    ¦       +-- classes
+    ¦       +-- web.xml
+    +-- hippo.war
+    +-- maven-archiver
+        +-- pom.properties
+
+16 directories, 8 files
+[root@ip-192-168-2-162 workspace]#
