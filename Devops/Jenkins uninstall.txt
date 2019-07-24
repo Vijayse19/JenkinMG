@@ -1,0 +1,9 @@
+sudo service jenkins stop
+After stopping it you can follow the normal flow of removing it using commands respective to your linux flavour
+
+For centos it will be
+
+sudo yum remove jenkins
+For ubuntu it will
+
+sudo apt-get remove --purge jenkins
