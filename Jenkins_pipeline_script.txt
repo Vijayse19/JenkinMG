@@ -1,0 +1,16 @@
+pipeline {
+agent any 
+
+stages {
+stage ('scm'){
+steps  {git branch: 'maven01', url: 'https://github.com/Valan23aix/JenkinMG.git'}
+}
+stage ('Build'){
+steps {bat label: '', script: 'mvn clean'  
+           bat label: '', script: 'mvn install'}
+}
+stage ('deployment') {
+steps {bat label: '', script: 'xcopy /y "C:\\Program Files (x86)\\Jenkins\\workspace\\Pipeline_project\\target\\hippo.war" "C:\\Program Files (x86)\\gradle-5.5.1"'}
+}
+}
+}

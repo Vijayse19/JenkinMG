@@ -1,0 +1,15 @@
+mkdir ~/downloads
+cd ~/downloads
+
+wget http://prdownloads.sourceforge.net/sourceforge/nagios/nagios-4.0.8.tar.gz
+wget http://nagios-plugins.org/download/nagios-plugins-2.0.3.tar.gz
+
+
+Below plug in must be installed in nagios client server then only we can able to moniter remote server . 
+https://www.nagios.org/ncpa/#downloads
+
+
+Below steps to configure nagios monitoring tomcat " 
+
+Nagios --linux pc local machine=== tomcat in remote meachine and different vpc and location 
+service:jmx:rmi:///jndi/rmi://<3.222.185.190>:<8080t>/jmxrmi
