@@ -1,413 +1,204 @@
-Ansible session-1 (1).mp4              Ansible session-6 (1).mp4
-Ansible session-2.mp4.2l8nt1l.partial  ansiblenv.pem
 
 Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
-$ chmod 400 ansiblenv.pem
+$ ssh -i ansiblenv.pem centos@52.91.61.250
 
-Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
-$ ssh -i an
-Annexure-A (1).pdf                     Ansible session-2.mp4.2l8nt1l.partial
-Annexure-A.pdf                         Ansible session-6 (1).mp4
-Ansible session-1 (1).mp4              ansiblenv.pem
-
-Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
-$ ssh -i ansiblenv.pem centos@52.1.138.104
-ssh: connect to host 52.1.138.104 port 22: Connection timed out
-
-Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
-$ ssh -i ansiblenv.pem centos@52.1.138.104
-The authenticity of host '52.1.138.104 (52.1.138.104)' can't be established.
-ECDSA key fingerprint is SHA256:DIWfPMnJkkhqCA606iTJQlP1AxbM0tZevSOnOc0lF30.
+The authenticity of host '52.91.61.250 (52.91.61.250)' can't be established.
+ECDSA key fingerprint is SHA256:tz9aBiizNIIKYakeJzOQYZRoBLxxp5A71x9qH9AWI/Q.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '52.1.138.104' (ECDSA) to the list of known hosts.
-[centos@ip-172-31-87-14 ~]$ clear
-[centos@ip-172-31-87-14 ~]$ sudo su -
-[root@ip-172-31-87-14 ~]# useradd ansible
-[root@ip-172-31-87-14 ~]# passwd ansible
+Warning: Permanently added '52.91.61.250' (ECDSA) to the list of known hosts.
+
+
+[centos@ip-172-31-88-8 ~]$ sudo su -
+[root@ip-172-31-88-8 ~]# useradd ansible
+[root@ip-172-31-88-8 ~]# passwd ansible
 Changing password for user ansible.
 New password:
 BAD PASSWORD: The password is shorter than 8 characters
 Retype new password:
 passwd: all authentication tokens updated successfully.
-[root@ip-172-31-87-14 ~]# visudo
-[root@ip-172-31-87-14 ~]# su - ansible
-[ansible@ip-172-31-87-14 ~]$ sudo yum install epel-release
-Loaded plugins: fastestmirror
-Determining fastest mirrors
- * base: mirrors.advancedhosters.com
- * extras: mirrors.advancedhosters.com
- * updates: mirrors.advancedhosters.com
-base                               | 3.6 kB     00:00
-extras                             | 3.4 kB     00:00
-updates                            | 3.4 kB     00:00
-(1/4): base/7/x86_64/group_gz        | 166 kB   00:00
-(2/4): extras/7/x86_64/primary_db    | 205 kB   00:00
-(3/4): updates/7/x86_64/primary_db   | 6.5 MB   00:00
-(4/4): base/7/x86_64/primary_db      | 6.0 MB   00:00
-Resolving Dependencies
---> Running transaction check
----> Package epel-release.noarch 0:7-11 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-==========================================================
- Package          Arch       Version     Repository  Size
-==========================================================
-Installing:
- epel-release     noarch     7-11        extras      15 k
-
-Transaction Summary
-==========================================================
-Install  1 Package
-
-Total download size: 15 k
-Installed size: 24 k
-Is this ok [y/d/N]: y
-Downloading packages:
-warning: /var/cache/yum/x86_64/7/extras/packages/epel-release-7-11.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
-Public key for epel-release-7-11.noarch.rpm is not installed
-epel-release-7-11.noarch.rpm         |  15 kB   00:00
-Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
-Importing GPG key 0xF4A80EB5:
- Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
- Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
- Package    : centos-release-7-6.1810.2.el7.centos.x86_64 (installed)
- From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
-Is this ok [y/N]: y
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : epel-release-7-11.noarch               1/1
-  Verifying  : epel-release-7-11.noarch               1/1
-
-Installed:
-  epel-release.noarch 0:7-11
-
-Complete!
-[ansible@ip-172-31-87-14 ~]$ sudo yum install ansible -y
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
-epel/x86_64/metalink               |  11 kB     00:00
- * base: mirrors.advancedhosters.com
- * epel: d2lzkl7pfhq30w.cloudfront.net
- * extras: mirrors.advancedhosters.com
- * updates: mirrors.advancedhosters.com
-epel                               | 5.3 kB     00:00
-(1/3): epel/x86_64/group_gz          |  88 kB   00:00
-(2/3): epel/x86_64/primary_db        | 6.8 MB   00:00
-epel/x86_64/updateinfo         FAILED                     
-http://csc.mcs.sdsmt.edu/epel/7/x86_64/repodata/e0cc08d6f813d029dc596b794bb2fd635814d011216ed8922bee302499f8b7f5-updateinfo.xml.bz2: [Errno 12] Timeout on http://csc.mcs.sdsmt.edu/epel/7/x86_64/repodata/e0cc08d6f813d029dc596b794bb2fd635814d011216ed8922bee302499f8b7f5-updateinfo.xml.bz2: (28, 'Connection timed out after 30001 milliseconds')
-Trying other mirror.
-(3/3): epel/x86_64/updateinfo        | 997 kB   00:00
-Resolving Dependencies
---> Running transaction check
----> Package ansible.noarch 0:2.8.2-1.el7 will be installed
---> Processing Dependency: python-httplib2 for package: ansible-2.8.2-1.el7.noarch
---> Processing Dependency: python-paramiko for package: ansible-2.8.2-1.el7.noarch
---> Processing Dependency: python2-cryptography for package: ansible-2.8.2-1.el7.noarch
---> Processing Dependency: python2-jmespath for package: ansible-2.8.2-1.el7.noarch
---> Processing Dependency: sshpass for package: ansible-2.8.2-1.el7.noarch
---> Running transaction check
----> Package python-httplib2.noarch 0:0.9.2-1.el7 will be installed
----> Package python-paramiko.noarch 0:2.1.1-9.el7 will be installed
---> Processing Dependency: python2-pyasn1 for package: python-paramiko-2.1.1-9.el7.noarch
----> Package python2-cryptography.x86_64 0:1.7.2-2.el7 will be installed
---> Processing Dependency: python-idna >= 2.0 for package: python2-cryptography-1.7.2-2.el7.x86_64
---> Processing Dependency: python-cffi >= 1.4.1 for package: python2-cryptography-1.7.2-2.el7.x86_64
---> Processing Dependency: python-enum34 for package: python2-cryptography-1.7.2-2.el7.x86_64
----> Package python2-jmespath.noarch 0:0.9.0-3.el7 will be installed
----> Package sshpass.x86_64 0:1.06-2.el7 will be installed
---> Running transaction check
----> Package python-cffi.x86_64 0:1.6.0-5.el7 will be installed
---> Processing Dependency: python-pycparser for package: python-cffi-1.6.0-5.el7.x86_64
----> Package python-enum34.noarch 0:1.0.4-1.el7 will be installed
----> Package python-idna.noarch 0:2.4-1.el7 will be installed
----> Package python2-pyasn1.noarch 0:0.1.9-7.el7 will be installed
---> Running transaction check
----> Package python-pycparser.noarch 0:2.14-1.el7 will be installed
---> Processing Dependency: python-ply for package: python-pycparser-2.14-1.el7.noarch
---> Running transaction check
----> Package python-ply.noarch 0:3.4-11.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-==========================================================
- Package              Arch   Version        Repository
-                                                     Size
-==========================================================
-Installing:
- ansible              noarch 2.8.2-1.el7    epel     15 M
-Installing for dependencies:
- python-cffi          x86_64 1.6.0-5.el7    base    218 k
- python-enum34        noarch 1.0.4-1.el7    base     52 k
- python-httplib2      noarch 0.9.2-1.el7    extras  115 k
- python-idna          noarch 2.4-1.el7      base     94 k
- python-paramiko      noarch 2.1.1-9.el7    updates 269 k
- python-ply           noarch 3.4-11.el7     base    123 k
- python-pycparser     noarch 2.14-1.el7     base    104 k
- python2-cryptography x86_64 1.7.2-2.el7    base    502 k
- python2-jmespath     noarch 0.9.0-3.el7    extras   39 k
- python2-pyasn1       noarch 0.1.9-7.el7    base    100 k
- sshpass              x86_64 1.06-2.el7     extras   21 k
-
-Transaction Summary
-==========================================================
-Install  1 Package (+11 Dependent packages)
-
-Total download size: 16 M
-Installed size: 92 M
-Downloading packages:
-(1/12): python-cffi-1.6.0-5.el7.x86_ | 218 kB   00:00
-(2/12): python-enum34-1.0.4-1.el7.no |  52 kB   00:00
-(3/12): python-paramiko-2.1.1-9.el7. | 269 kB   00:00
-(4/12): python-ply-3.4-11.el7.noarch | 123 kB   00:00
-(5/12): python-pycparser-2.14-1.el7. | 104 kB   00:00
-(6/12): python-httplib2-0.9.2-1.el7. | 115 kB   00:00
-(7/12): python2-cryptography-1.7.2-2 | 502 kB   00:00
-(8/12): python-idna-2.4-1.el7.noarch |  94 kB   00:00
-(9/12): python2-jmespath-0.9.0-3.el7 |  39 kB   00:00
-(10/12): sshpass-1.06-2.el7.x86_64.r |  21 kB   00:00
-(11/12): python2-pyasn1-0.1.9-7.el7. | 100 kB   00:00
-warning: /var/cache/yum/x86_64/7/epel/packages/ansible-2.8.2-1.el7.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
-Public key for ansible-2.8.2-1.el7.noarch.rpm is not installed
-(12/12): ansible-2.8.2-1.el7.noarch. |  15 MB   00:01
-----------------------------------------------------------
-Total                         13 MB/s |  16 MB  00:01
-Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
-Importing GPG key 0x352C64E5:
- Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
- Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
- Package    : epel-release-7-11.noarch (@extras)
- From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : python2-pyasn1-0.1.9-7.el7.noarch     1/12
-  Installing : python-enum34-1.0.4-1.el7.noarch      2/12
-  Installing : python-httplib2-0.9.2-1.el7.noarch    3/12
-  Installing : sshpass-1.06-2.el7.x86_64             4/12
-  Installing : python2-jmespath-0.9.0-3.el7.noarc    5/12
-  Installing : python-ply-3.4-11.el7.noarch          6/12
-  Installing : python-pycparser-2.14-1.el7.noarch    7/12
-  Installing : python-cffi-1.6.0-5.el7.x86_64        8/12
-  Installing : python-idna-2.4-1.el7.noarch          9/12
-  Installing : python2-cryptography-1.7.2-2.el7.x   10/12
-  Installing : python-paramiko-2.1.1-9.el7.noarch   11/12
-  Installing : ansible-2.8.2-1.el7.noarch           12/12
-  Verifying  : python-idna-2.4-1.el7.noarch          1/12
-  Verifying  : python-pycparser-2.14-1.el7.noarch    2/12
-  Verifying  : python-ply-3.4-11.el7.noarch          3/12
-  Verifying  : python-paramiko-2.1.1-9.el7.noarch    4/12
-  Verifying  : python2-jmespath-0.9.0-3.el7.noarc    5/12
-  Verifying  : ansible-2.8.2-1.el7.noarch            6/12
-  Verifying  : python-cffi-1.6.0-5.el7.x86_64        7/12
-  Verifying  : sshpass-1.06-2.el7.x86_64             8/12
-  Verifying  : python-httplib2-0.9.2-1.el7.noarch    9/12
-  Verifying  : python2-pyasn1-0.1.9-7.el7.noarch    10/12
-  Verifying  : python-enum34-1.0.4-1.el7.noarch     11/12
-  Verifying  : python2-cryptography-1.7.2-2.el7.x   12/12
-
-Installed:
-  ansible.noarch 0:2.8.2-1.el7
-
-Dependency Installed:
-  python-cffi.x86_64 0:1.6.0-5.el7
-  python-enum34.noarch 0:1.0.4-1.el7
-  python-httplib2.noarch 0:0.9.2-1.el7
-  python-idna.noarch 0:2.4-1.el7
-  python-paramiko.noarch 0:2.1.1-9.el7
-  python-ply.noarch 0:3.4-11.el7
-  python-pycparser.noarch 0:2.14-1.el7
-  python2-cryptography.x86_64 0:1.7.2-2.el7
-  python2-jmespath.noarch 0:0.9.0-3.el7
-  python2-pyasn1.noarch 0:0.1.9-7.el7
-  sshpass.x86_64 0:1.06-2.el7
-
-Complete!
-[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ansible/ansible.cfg
-[ansible@ip-172-31-87-14 ~]$ ssh-keygen
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/ansible/.ssh/id_rsa):
-Created directory '/home/ansible/.ssh'.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /home/ansible/.ssh/id_rsa.
-Your public key has been saved in /home/ansible/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:OxnderbWT67x6S+vJfDZ99aNugjOoMPYkea/1KvjjwY ansible@ip-172-31-87-14.ec2.internal
-The key's randomart image is:
-+---[RSA 2048]----+
-|                 |
-|                 |
-|                 |
-|         . .     |
-|     .  S . o    |
-|    E  . + . o o |
-|   * oo * . o.=.B|
-|  . =oo= + +..+BB|
-|    .=*== ..+o+XO|
-+----[SHA256]-----+
-[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ssh/sshd_config
-[ansible@ip-172-31-87-14 ~]$ sudo service sshd restart
+[root@ip-172-31-88-8 ~]# visudo
+[root@ip-172-31-88-8 ~]# su - anisble
+su: user anisble does not exist
+[root@ip-172-31-88-8 ~]# su - ansible
+[ansible@ip-172-31-88-8 ~]$ sudo vi /etc/ssh/sshd_config
+[ansible@ip-172-31-88-8 ~]$ sudo service sshd restart
 Redirecting to /bin/systemctl restart sshd.service
-[ansible@ip-172-31-87-14 ~]$ ssh-copy-id 172.31.87.14
-/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/ansible/.ssh/id_rsa.pub"
-The authenticity of host '172.31.87.14 (172.31.87.14)' can't be established.
-ECDSA key fingerprint is SHA256:DIWfPMnJkkhqCA606iTJQlP1AxbM0tZevSOnOc0lF30.
-ECDSA key fingerprint is MD5:6c:b4:90:0b:9f:4d:7b:0e:c9:12:2f:ef:f9:8c:34:3d.
-Are you sure you want to continue connecting (yes/no)? yes
-/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-ansible@172.31.87.14's password:
+[ansible@ip-172-31-88-8 ~]$ sudo vi /etc/hosts
+[ansible@ip-172-31-88-8 ~]$ client_loop: send disconnect: Connection reset by peer
 
-Number of key(s) added: 1
+Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
+$ ssh -i ansiblenv.pem centos@52.91.61.250
+Last login: Sun Jul 28 10:29:09 2019 from 42.111.165.108
+[centos@ip-172-31-88-8 ~]$ ls -lrt
+total 0
+[centos@ip-172-31-88-8 ~]$ su - ansible
+Password:
+su: Authentication failure
+[centos@ip-172-31-88-8 ~]$ su - ansible
+Password:
+Last login: Sun Jul 28 10:42:47 UTC 2019 on pts/1
+Last failed login: Sun Jul 28 11:32:28 UTC 2019 on pts/1
+There was 1 failed login attempt since the last successful login.
+[ansible@ip-172-31-88-8 ~]$ ls -lrt
+total 0
+[ansible@ip-172-31-88-8 ~]$ client_loop: send disconnect: Connection reset by peer
 
-Now try logging into the machine, with:   "ssh '172.31.87.14'"
-and check to make sure that only the key(s) you wanted were added.
+Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
+$ ssh -i ansiblenv.pem centos@52.91.61.250
+Last login: Sun Jul 28 11:32:13 2019 from 42.111.165.108
+[centos@ip-172-31-88-8 ~]$ more /etc/ssh/sshd_config
+/etc/ssh/sshd_config: Permission denied
+[centos@ip-172-31-88-8 ~]$ sudo more /etc/ssh/sshd_config
+#       $OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:04 naddy Exp $
 
-[ansible@ip-172-31-87-14 ~]$ ssh-copy-id 172.31.88.8
-/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/ansible/.ssh/id_rsa.pub"
-The authenticity of host '172.31.88.8 (172.31.88.8)' can't be established.
-ECDSA key fingerprint is SHA256:tz9aBiizNIIKYakeJzOQYZRoBLxxp5A71x9qH9AWI/Q.
-ECDSA key fingerprint is MD5:e1:b6:d8:3a:ef:b1:9b:4f:a8:74:a3:bd:a7:5e:01:82.
-Are you sure you want to continue connecting (yes/no)? yes
-/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-ansible@172.31.88.8's password:
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
 
-Number of key(s) added: 1
+# This sshd was compiled with PATH=/usr/local/bin:/usr/bin
 
-Now try logging into the machine, with:   "ssh '172.31.88.8'"
-and check to make sure that only the key(s) you wanted were added.
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
 
-[ansible@ip-172-31-87-14 ~]$ ansible -m ping all
- [WARNING]: provided hosts list is empty, only localhost is available. Note
-that the implicit localhost does not match 'all'
+# If you want to change the port on a SELinux system, you have to tell
+# SELinux about this change.
+# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+#
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
 
-[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/hosts
-[ansible@ip-172-31-87-14 ~]$ ansible -m ping all
- [WARNING]: provided hosts list is empty, only localhost is available. Note
-that the implicit localhost does not match 'all'
+HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
 
-[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ansible/hosts
-[ansible@ip-172-31-87-14 ~]$ ansible -m ping all
-[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to
-allow bad characters in group names by default, this will change, but still be
-user configurable on deprecation. This feature will be removed in version 2.10.
- Deprecation warnings can be disabled by setting deprecation_warnings=False in
-ansible.cfg.
- [WARNING]: Invalid characters were found in group names but not replaced, use
--vvvv to see details
+# Ciphers and keying
+#RekeyLimit default none
 
-172.31.87.14 | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/bin/python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-172.31.88.8 | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/bin/python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-[ansible@ip-172-31-87-14 ~]$ mkdir playbook
-[ansible@ip-172-31-87-14 ~]$ cd playbook/
-[ansible@ip-172-31-87-14 playbook]$ vi tree.yml
-[ansible@ip-172-31-87-14 playbook]$ ansible-playbook tree.yml
-[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to
-allow bad characters in group names by default, this will change, but still be
-user configurable on deprecation. This feature will be removed in version 2.10.
- Deprecation warnings can be disabled by setting deprecation_warnings=False in
-ansible.cfg.
- [WARNING]: Invalid characters were found in group names but not replaced, use
--vvvv to see details
+# Logging
+#SyslogFacility AUTH
+SyslogFacility AUTHPRIV
+#LogLevel INFO
 
-[DEPRECATION WARNING]: Instead of sudo/sudo_user, use become/become_user and
-make sure become_method is 'sudo' (default). This feature will be removed in
-version 2.9. Deprecation warnings can be disabled by setting
-deprecation_warnings=False in ansible.cfg.
-ERROR! the field 'hosts' should be a list of (<type 'basestring'>,), but the item '123' is a <type 'int'>
+# Authentication:
 
-The error appears to be in '/home/ansible/playbook/tree.yml': line 1, column 3, but may
-be elsewhere in the file depending on the exact syntax problem.
+#LoginGraceTime 2m
+#PermitRootLogin yes
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
 
-The offending line appears to be:
+#PubkeyAuthentication yes
 
+# The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+# but this is overridden so installations will only check .ssh/authorized_keys
+AuthorizedKeysFile .ssh/authorized_keys
 
-- hosts: 123
-  ^ here
+#AuthorizedPrincipalsFile none
 
-[ansible@ip-172-31-87-14 playbook]$ vi tree.yml           [ansible@ip-172-31-87-14 playbook]$ ansible-playbook tree.yml
-[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to
-allow bad characters in group names by default, this will change, but still be
-user configurable on deprecation. This feature will be removed in version 2.10.
- Deprecation warnings can be disabled by setting deprecation_warnings=False in
-ansible.cfg.
- [WARNING]: Invalid characters were found in group names but not replaced, use
--vvvv to see details
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
 
-[DEPRECATION WARNING]: Instead of sudo/sudo_user, use become/become_user and
-make sure become_method is 'sudo' (default). This feature will be removed in
-version 2.9. Deprecation warnings can be disabled by setting
-deprecation_warnings=False in ansible.cfg.
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+#HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
 
-PLAY [web] *********************************************************************
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication yes
+#PermitEmptyPasswords no
+#PasswordAuthentication no
 
-TASK [Gathering Facts] *********************************************************
-ok: [172.31.87.14]
-ok: [172.31.88.8]
+# Change to no to disable s/key passwords
+#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
 
-TASK [Install tree software] ***************************************************
-changed: [172.31.88.8]
-changed: [172.31.87.14]
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+#KerberosUseKuserok yes
 
-PLAY RECAP *********************************************************************
-172.31.87.14               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-172.31.88.8                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+# GSSAPI options
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+#GSSAPIEnablek5users no
 
-[ansible@ip-172-31-87-14 playbook]$ vi tree.yml
-[ansible@ip-172-31-87-14 playbook]$ ansible-playbook tree.yml
-[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by
-default, this will change, but still be user configurable on deprecation. This feature will be removed in version
-2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
- [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+# WARNING: 'UsePAM no' is not supported in Red Hat Enterprise Linux and may cause several
+# problems.
+UsePAM yes
 
-[DEPRECATION WARNING]: Instead of sudo/sudo_user, use become/become_user and make sure become_method is 'sudo'
-(default). This feature will be removed in version 2.9. Deprecation warnings can be disabled by setting
-deprecation_warnings=False in ansible.cfg.
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+#PrintMotd yes
+#PrintLastLog yes
+#TCPKeepAlive yes
+#UseLogin no
+#UsePrivilegeSeparation sandbox
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#ShowPatchLevel no
+#UseDNS yes
+#PidFile /var/run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
 
-PLAY [web] ***********************************************************************************************************
+# no default banner path
+#Banner none
 
-TASK [Gathering Facts] ***********************************************************************************************
-ok: [172.31.88.8]
-ok: [172.31.87.14]
+# Accept locale-related environment variables
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
 
-TASK [Install vts software] ******************************************************************************************
-changed: [172.31.88.8]
-changed: [172.31.87.14]
+# override default of no subsystems
+Subsystem sftp  /usr/libexec/openssh/sftp-server
 
-PLAY RECAP ***********************************************************************************************************
-172.31.87.14               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-172.31.88.8                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#       X11Forwarding no
+#       AllowTcpForwarding no
+#       PermitTTY no
+#       ForceCommand cvs server
+[centos@ip-172-31-88-8 ~]$ su - ansible
+Password:
+Last login: Sun Jul 28 11:39:04 UTC 2019 on pts/2
+[ansible@ip-172-31-88-8 ~]$ ll
+total 0
+[ansible@ip-172-31-88-8 ~]$ ls
+[ansible@ip-172-31-88-8 ~]$ sudo more /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.31.88.8
+172.31.87.14
 
-[ansible@ip-172-31-87-14 playbook]$ ansible-playbook tree.yml^C
-[ansible@ip-172-31-87-14 playbook]$ ls -l
-total 4
--rw-rw-r--. 1 ansible ansible 142 Jul 28 10:42 tree.yml
-[ansible@ip-172-31-87-14 playbook]$ more tree.yml
-- hosts: web
-  user: ansible
-  sudo: yes
-  connection: ssh
-  tasks:
-  - name: Install vts software
-    action: package name=git state=latest
+[ansible@ip-172-31-88-8 ~]$ client_loop: send disconnect: Connection reset by peer
 
-[ansible@ip-172-31-87-14 playbook]$
