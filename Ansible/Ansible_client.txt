@@ -1,0 +1,45 @@
+Ansible client
+
+[centos@ip-172-31-88-8 ~]$ sudo su -
+[root@ip-172-31-88-8 ~]# useradd ansible
+[root@ip-172-31-88-8 ~]# passwd ansible
+
+[root@ip-172-31-88-8 ~]# visudo
+
+[root@ip-172-31-88-8 ~]# su - ansible
+
+[ansible@ip-172-31-88-8 ~]$ sudo vi /etc/ssh/sshd_config
+
+[ansible@ip-172-31-88-8 ~]$ sudo service sshd restart
+Redirecting to /bin/systemctl restart sshd.service
+
+[ansible@ip-172-31-88-8 ~]$ sudo vi /etc/hosts
+
+[centos@ip-172-31-88-8 ~]$ ls -lrt
+total 0
+[centos@ip-172-31-88-8 ~]$ su - ansible
+Password:
+Last login: Sun Jul 28 10:42:47 UTC 2019 on pts/1
+Last failed login: Sun Jul 28 11:32:28 UTC 2019 on pts/1
+There was 1 failed login attempt since the last successful login.
+[ansible@ip-172-31-88-8 ~]$ ls -lrt
+total 0
+
+[centos@ip-172-31-88-8 ~]$ more /etc/ssh/sshd_config
+/etc/ssh/sshd_config: Permission denied
+[centos@ip-172-31-88-8 ~]$ sudo more /etc/ssh/sshd_config
+
+[centos@ip-172-31-88-8 ~]$ su - ansible
+Password:
+Last login: Sun Jul 28 11:39:04 UTC 2019 on pts/2
+[ansible@ip-172-31-88-8 ~]$ ll
+total 0
+[ansible@ip-172-31-88-8 ~]$ ls
+[ansible@ip-172-31-88-8 ~]$ sudo more /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.31.88.8
+172.31.87.14
+
+
+

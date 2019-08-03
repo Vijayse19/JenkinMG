@@ -1,0 +1,48 @@
+Manavalan L@LAPTOP-6FTOCGDF MINGW64 ~/Downloads
+$ chmod 400 ansiblenv.pem
+
+$ ssh -i ansiblenv.pem centos@52.1.138.104
+
+$ ssh -i ansiblenv.pem centos@52.1.138.104
+
+[centos@ip-172-31-87-14 ~]$ clear
+[centos@ip-172-31-87-14 ~]$ sudo su -
+[root@ip-172-31-87-14 ~]# useradd ansible
+[root@ip-172-31-87-14 ~]# passwd ansible
+
+[root@ip-172-31-87-14 ~]# visudo
+[root@ip-172-31-87-14 ~]# su - ansible
+[ansible@ip-172-31-87-14 ~]$ sudo yum install epel-release
+
+[ansible@ip-172-31-87-14 ~]$ sudo yum install ansible -y
+
+[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ansible/ansible.cfg
+[ansible@ip-172-31-87-14 ~]$ ssh-keygen
+
+[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ssh/sshd_config
+
+[ansible@ip-172-31-87-14 ~]$ sudo service sshd restart
+Redirecting to /bin/systemctl restart sshd.service
+
+[ansible@ip-172-31-87-14 ~]$ ssh-copy-id 172.31.87.14
+
+[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/hosts
+[ansible@ip-172-31-87-14 ~]$ sudo vi /etc/ansible/hosts
+
+[ansible@ip-172-31-87-14 ~]$ ansible -m ping all
+
+[ansible@ip-172-31-87-14 ~]$ mkdir playbook
+
+[ansible@ip-172-31-87-14 ~]$ cd playbook/
+
+[ansible@ip-172-31-87-14 playbook]$ vi tree.yml
+- hosts: web
+  user: ansible
+  sudo: yes
+  connection: ssh
+  tasks:
+- name: Install vts software
+    action: package name=git state=latest
+
+[ansible@ip-172-31-87-14 playbook]$ ansible-playbook tree.yml
+

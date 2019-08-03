@@ -5,7 +5,7 @@ wget http://prdownloads.sourceforge.net/sourceforge/nagios/nagios-4.0.8.tar.gz
 wget http://nagios-plugins.org/download/nagios-plugins-2.0.3.tar.gz
 
 
-Below plug in must be installed in nagios client server then only we can able to moniter remote server . 
+Below plug in must be installed in nagioslear client server then only we can able to moniter remote server . 
 https://www.nagios.org/ncpa/#downloads
 
 
