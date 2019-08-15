@@ -1,15 +1,16 @@
-Let’s clone a tomcat image in your local machine from Docker Hub.
+Letâ€™s clone a tomcat image in your local machine from Docker Hub.
 
 docker image pull tomcat:8.0
 
 docker images  # it will list all images in your docker
-Now let’s create and start a tomcat container from the image
+Now letâ€™s create and start a tomcat container from the image
 
 docker container create --publish 8082:8080 --name my-tomcat-container tomcat:8.0
 
 docker container ls -a # it will list all the containers
 
 docker container start -i my-tomcat-container
-if you look into tomcat dockerfile, you will find tomcat expose port 8080, so while creating container we map tomcat container port to local machine port by using –
+if you look into tomcat dockerfile, you will find tomcat expose port 8080, so while creating container we map tomcat container port to local machine port by using â€“
 publish <local_machine_port>:<tomcat_expose_port>
 Tomcat application can be accessed in http://localhost:8082
+docker run -it --rm -p 8888:8080 -v /Users/myUser/Personal/Docker/tomcat/sample.war:/usr/local/tomcat/webapps/sample.war tomcat
